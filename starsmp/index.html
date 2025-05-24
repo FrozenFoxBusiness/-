@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Star SMP Showcase | FrozenFox</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/starsmp.css">
+    <link rel="icon" href="../media/branding/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="branding">
+                <img src="../media/branding/logo.png" alt="FrozenFox Logo" class="logo">
+                <h1>Frozen<span>Fox</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="current"><a href="index.html">Showcase</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="starsmp-hero">
+        <div class="container">
+            <h1>Star SMP Plugin</h1>
+            <p>A SMP with 12 star types, each giving distinct abilities</p>
+        </div>
+    </section>
+
+    <section class="star-categories">
+        <div class="container">
+            <div class="category-tabs">
+                <button class="tab-btn active" data-category="overworld">Overworld Stars</button>
+                <button class="tab-btn" data-category="nether">Nether Stars</button>
+                <button class="tab-btn" data-category="end">End Stars</button>
+            </div>
+            
+            <div class="category-content active" id="overworld">
+                <!-- LIFE-STAR -->
+                <div class="star-card">
+                    <div class="star-header">
+                        <h2>LIFE-STAR</h2>
+                        <span class="star-type">Overworld - Haste 1</span>
+                    </div>
+                    <div class="star-abilities">
+                        <div class="ability">
+                            <h3>Passive</h3>
+                            <p>4 extra hearts</p>
+                        </div>
+                        <div class="ability">
+                            <h3>Ability: Life Drain</h3>
+                            <p>Gain half a heart per crit for 20 seconds (60s cooldown)</p>
+                        </div>
+                        <div class="ability">
+                            <h3>Ultimate: Total Restoration</h3>
+                            <p>Full heal and saturation for you and trusted allies (120s cooldown)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ICE-STAR -->
+                <div class="star-card">
+                    <div class="star-header">
+                        <h2>ICE-STAR</h2>
+                        <span class="star-type">Overworld - Haste 1</span>
+                    </div>
+                    <div class="star-content">
+                        <div class="star-abilities">
+                            <div class="ability">
+                                <h3>Passive</h3>
+                                <p>Speed 5 on ice + every 8 hits 50% chance to apply slowness 4</p>
+                            </div>
+                            <div class="ability">
+                                <h3>Ability: Ice Ring</h3>
+                                <p>Creates an ice domain for 15 seconds made from blue ice (60s cooldown)</p>
+                            </div>
+                            <div class="ability">
+                                <h3>Ultimate: Sub Zero</h3>
+                                <p>Full stuns and holds enemies in place for 10s (105s cooldown)</p>
+                            </div>
+                        </div>
+                        <div class="star-media">
+                            <div class="video-pair">
+                                <video controls>
+                                    <source src="../media/starsmp/IceStar.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <p>First-person view</p>
+                            </div>
+                            <div class="video-pair">
+                                <video controls>
+                                    <source src="../media/starsmp/IceStarReplay.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <p>Replay view</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- THUNDER-STAR -->
+                <div class="star-card">
+                    <div class="star-header">
+                        <h2>THUNDER-STAR</h2>
+                        <span class="star-type">Overworld - Haste 1</span>
+                    </div>
+                    <div class="star-abilities">
+                        <div class="ability">
+                            <h3>Passive</h3>
+                            <p>Speed 2 every 15 hits thunder strike</p>
+                        </div>
+                        <div class="ability">
+                            <h3>Ability: Bolt</h3>
+                            <p>Shoot a thunderbolt that disables stars for 30s and does 4 hearts (80s cooldown)</p>
+                        </div>
+                        <div class="ability">
+                            <h3>Ultimate: Always Strike Lightning</h3>
+                            <p>Every hit = thunder strike for 8 seconds and speed 4 (105s cooldown)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SOUND-STAR -->
+                <div class="star-card">
+                    <div class="star-header">
+                        <h2>SOUND-STAR</h2>
+                        <span class="star-type">Overworld - Haste 1</span>
+                    </div>
+                    <div class="star-content">
+                        <div class="star-abilities">
+                            <div class="ability">
+                                <h3>Passive</h3>
+                                <p>Ultimate has 2 forms (sneaking/standing)</p>
+                            </div>
+                            <div class="ability">
+                                <h3>Ability: Sword Sing</h3>
+                                <p>Movements with sword as fluid as with a whip for 10 seconds. Each successful hit increases cooldown of hit enemy by 10s</p>
+                            </div>
+                            <div class="ability">
+                                <h3>Ultimate</h3>
+                                <p><strong>Form 1 (Standing):</strong> AOE around you that flings people away (4 hearts damage)<br>
+                                <strong>Form 2 (Sneaking):</strong> Forward attack that increases cooldown of hit players by 15s (5.5 hearts damage)</p>
+                            </div>
+                        </div>
+                        <div class="star-media">
+                            <div class="video-pair">
+                                <video controls>
+                                    <source src="../media/starsmp/SoundStar1.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <p>First-person view</p>
+                            </div>
+                            <div class="video-pair">
+                                <video controls>
+                                    <source src="../media/starsmp/SoundStar1Replay.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <p>Replay view</p>
+                            </div>
+                            <div class="video-pair">
+                                <video controls>
+                                    <source src="../media/starsmp/SoundStar2.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <p>Alternative ability</p>
+                            </div>
+                            <div class="video-pair">
+                                <video controls>
+                                    <source src="../media/starsmp/SoundStar2Replay.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <p>Replay view</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-content" id="nether">
+                <!-- FIRE-STAR -->
+                <div class="star-card">
+                    <div class="star-header">
+                        <h2>FIRE-STAR</h2>
+                        <span class="star-type">Nether - Fire Res</span>
+                    </div>
+                    <div class="star-abilities">
+                        <div class="ability">
+                            <h3>Passive</h3>
+                            <p>Every 12 hits 50% chance to set enemy on fire + /togglefireglow</p>
+                        </div>
+                        <div class="ability">
+                            <h3>Ability: Fireflies</h3>
+                            <p>Shoot out 6 fireflies that home on closest enemy for first 2 seconds, setting them on fire and dealing 1 heart on hit (80s cooldown)</p>
+                        </div>
+                        <div class="ability">
+                            <h3>Ultimate: Fireball</h3>
+                            <p>Shoot a fireball that deals 7 hearts of damage (90s cooldown)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STRENGTH-STAR -->
+                <div class="star-card">
+                    <div class="star-header">
+                        <h2>STRENGTH-STAR</h2>
+                        <span class="star-type">Nether - Fire Res</span>
+                    </div>
+                    <div class="star-abilities">
+                        <div class="ability">
+                            <h3>Passive</h3>
+                            <p>Strength 1</p>
+                        </div>
+                        <div class="ability">
+                            <h3>Ability: Rage</h3>
+                            <p>Lose hearts for 30s of strength 2 (75s cooldown)</p>
+                        </div>
+                        <div class="ability">
+                            <h3>Ultimate: Revenge Counter</h3>
+                            <p>Charge ultimate's damage by taking damage from players for first 10s, then deal all accumulated damage in one hit (90s cooldown)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WITHER-STAR -->
+                <div class="star-card">
+                    <div class="star-header">
+                        <h2>WITHER-STAR</h2>
+                        <span class="star-type">Nether - Fire Res</span>
+                    </div>
+                    <div class="star-abilities">
+                        <div class="ability">
+                            <h3>Passive</h3>
+                            <p>Every 8 hits 50% chance to apply wither 2 for 3s and gain 2 extra hearts for 10s</p>
+                        </div>
+                        <div class="ability">
+                            <h3>Ability: Decay</h3>
+                            <p>Takes 3 perm hearts from every player in 5 block radius for 40s and inflicts wither in AOE for 20s (75s cooldown)</p>
+                        </div>
+                        <div class="ability">
+                            <h3>Ultimate: Wither Head</h3>
+                            <p>Shoots 3 wither skeleton heads each dealing 1 heart damage and applying wither (90s cooldown)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GHOST-STAR -->
+                <div class="star-card">
+                    <div class="star-header">
+                        <h2>GHOST-STAR</h2>
+                        <span class="star-type">Nether - Fire Res</span>
+                    </div>
+                    <div class="star-abilities">
+                        <div class="ability">
+                            <h3>Passive</h3>
+                            <p>Every 10 hits 20% chance to take 0 damage</p>
+                        </div>
+                        <div class="ability">
+                            <h3>Ability: Haunt</h3>
+                            <p>Most recently hit player gets slowness and blindness, stars pulse glowing for 15s (90s cooldown)</p>
+                        </div>
+                        <div class="ability">
+                            <h3>Ultimate: Ghost Form</h3>
+                            <p>Turn into ghost for 20s - immunity to melee (not bows/fireballs/dash) and true invisibility (105s cooldown)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-content" id="end">
+                <!-- MATRIX-STAR -->
+                <div class="star-card">
+                    <div class="star-header">
+                        <h2>MATRIX-STAR</h2>
+                        <span class="star-type">End - Chorus Fruit Gaps</span>
+                    </div>
+                    <div class="star-abilities">
+                        <div class="ability">
+                            <h3>Passive</h3>
+                            <p>On half health gain resistance 1</p>
+                        </div>
+                        <div class="ability">
+                            <h3>Ability: Disable</h3>
+                            <p>Disable wind charges for 8 seconds (60s cooldown)</p>
+                        </div>
+                        <div class="ability">
+                            <h3>Ultimate: Screen Glitch</h3>
+                            <p>For 10s all enemies in 3 block AOE get blinded (via texture pack) and user gains haste 10 (105s cooldown)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VOID-STAR -->
+                <div class="star-card">
+                    <div class="star-header">
+                        <h2>VOID-STAR</h2>
+                        <span class="star-type">End - Chorus Fruit Gaps</span>
+                    </div>
+                    <div class="star-abilities">
+                        <div class="ability">
+                            <h3>Passive</h3>
+                            <p>Pushes you out of void + /togglevoidinvis</p>
+                        </div>
+                        <div class="ability">
+                            <h3>Ability: Chain</h3>
+                            <p>Chain enemies to ground (poison effect) for 15s (75s cooldown)</p>
+                        </div>
+                        <div class="ability">
+                            <h3>Ultimate: Binding Void</h3>
+                            <p>Chains enemies to you and blinds them (15s), blinds their hearts for 25s (90s cooldown)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AIR-STAR -->
+                <div class="star-card">
+                    <div class="star-header">
+                        <h2>AIR-STAR</h2>
+                        <span class="star-type">End - Chorus Fruit Gaps</span>
+                    </div>
+                    <div class="star-abilities">
+                        <div class="ability">
+                            <h3>Passive</h3>
+                            <p>No fall damage</p>
+                        </div>
+                        <div class="ability">
+                            <h3>Ability: Tornado</h3>
+                            <p>Suck every player in 15 block radius and spit them out (60s cooldown)</p>
+                        </div>
+                        <div class="ability">
+                            <h3>Ultimate: Dash</h3>
+                            <p>Dash forward dealing 2.5 hearts, hiding hearts briefly and applying poison (45s cooldown)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PURPLE-STAR -->
+                <div class="star-card">
+                    <div class="star-header">
+                        <h2>PURPLE-STAR</h2>
+                        <span class="star-type">End - Chorus Fruit Gaps</span>
+                    </div>
+                    <div class="star-abilities">
+                        <div class="ability">
+                            <h3>Passive</h3>
+                            <p>Every 15 hits 50% chance to deal 1.5x damage</p>
+                        </div>
+                        <div class="ability">
+                            <h3>Ability: Marked for Death</h3>
+                            <p>Marks 1 enemy in 20 block range for death (shadow step multiplier increases to 2.5x) (80s cooldown)</p>
+                        </div>
+                        <div class="ability">
+                            <h3>Ultimate: Shadow Step</h3>
+                            <p>Teleport behind enemy in 20 block radius, next hit deals 2x damage (105s cooldown)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cta">
+        <div class="container">
+            <h2>Want a Plugin Like This?</h2>
+            <a href="../contact.html" class="btn">Contact FrozenFox</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>uhhhhhh.. hi!</p>
+        </div>
+    </footer>
+    <script src="../js/particles.js"></script>
+    <script src="../js/starsmp-gallery.js"></script>
+</body>
+</html>
