@@ -1,13 +1,21 @@
 :root {
-    --primary: #7fd3ff;        /* Bright icy blue */
-    --primary-dark: #4a9bc7;   /* Darker ice blue */
-    --secondary: #a0e4ff;      /* Light frost accent */
-    --dark: #0a0e17;           /* Deep navy background */
-    --light: #1a2238;          /* Frosted card background */
-    --accent: #b8f2e6;         /* Minty frost accent */
-    --text: #e6f1ff;           /* Bright text */
-    --text-light: #a7b8d1;     /* Subdued text */
-    --glow: rgba(127, 211, 255, 0.15); 
+    --primary: #7fd3ff;
+    /* Bright icy blue */
+    --primary-dark: #4a9bc7;
+    /* Darker ice blue */
+    --secondary: #a0e4ff;
+    /* Light frost accent */
+    --dark: #0a0e17;
+    /* Deep navy background */
+    --light: #1a2238;
+    /* Frosted card background */
+    --accent: #b8f2e6;
+    /* Minty frost accent */
+    --text: #e6f1ff;
+    /* Bright text */
+    --text-light: #a7b8d1;
+    /* Subdued text */
+    --glow: rgba(127, 211, 255, 0.15);
 }
 
 * {
@@ -50,11 +58,19 @@ body::after {
 }
 
 @keyframes iceFlow {
-    0% { background-position: 0 0; }
-    100% { background-position: 1000px 1000px; }
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 1000px 1000px;
+    }
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     line-height: 1.2;
@@ -131,14 +147,23 @@ a:hover {
     width: 200px;
     height: 200px;
 }
+
 .btn:hover {
     color: var(--dark);
 }
 
 @keyframes gradientShift {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 /* Header Styles */
@@ -146,7 +171,7 @@ header {
     background: rgba(10, 14, 23, 0.85);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     position: fixed;
     width: 100%;
     top: 0;
@@ -205,13 +230,29 @@ header .container {
 }
 
 @keyframes earTwitchLeft {
-    0%, 96%, 100% { transform: rotate(-30deg); }
-    98% { transform: rotate(-20deg); }
+
+    0%,
+    96%,
+    100% {
+        transform: rotate(-30deg);
+    }
+
+    98% {
+        transform: rotate(-20deg);
+    }
 }
 
 @keyframes earTwitchRight {
-    0%, 96%, 100% { transform: rotate(30deg); }
-    98% { transform: rotate(20deg); }
+
+    0%,
+    96%,
+    100% {
+        transform: rotate(30deg);
+    }
+
+    98% {
+        transform: rotate(20deg);
+    }
 }
 
 .branding h1 {
@@ -268,7 +309,7 @@ nav ul li.current a::after {
 .showcase h1 {
     font-size: 3rem;
     margin-bottom: 20px;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .showcase p {
@@ -334,7 +375,7 @@ footer {
     text-align: center;
     background: linear-gradient(to top, rgba(10, 14, 23, 0.9), rgba(26, 34, 56, 0.7));
     margin-top: 50px;
-    border-top: 1px solid rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 footer::before {
@@ -344,13 +385,13 @@ footer::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, 
-        transparent 0%, 
-        var(--glow) 20%, 
-        transparent 40%,
-        var(--glow) 60%,
-        transparent 80%,
-        var(--glow) 100%);
+    background: linear-gradient(45deg,
+            transparent 0%,
+            var(--glow) 20%,
+            transparent 40%,
+            var(--glow) 60%,
+            transparent 80%,
+            var(--glow) 100%);
     background-size: 400% 400%;
     animation: aurora 15s ease infinite;
     opacity: 0.3;
@@ -363,9 +404,17 @@ footer .container {
 }
 
 @keyframes aurora {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -398,7 +447,92 @@ footer .container {
         flex-direction: column;
     }
 }
+
 .logo {
     height: 40px;
     margin-right: 15px;
+}
+
+.smalltext {
+    color: var(--text);
+    margin-top: 6px;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown:hover .dropdown-btn svg {
+    transform: rotate(180deg);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 220px;
+    background: rgba(26, 34, 56, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(127, 211, 255, 0.2);
+    z-index: 1000;
+    overflow: hidden;
+    transform-origin: top center;
+    transform: scaleY(0);
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+.dropdown-content {
+    margin-top: 2px;
+}
+
+.dropdown-content a {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    color: var(--text-light);
+    transition: all 0.3s ease;
+    border-bottom: 1px solid rgba(127, 211, 255, 0.05);
+}
+
+.dropdown-content a:hover {
+    background: rgba(127, 211, 255, 0.1);
+    color: var(--primary);
+    padding-left: 25px;
+}
+
+.dropdown-content a img {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+    object-fit: contain;
+}
+
+.dropdown-content::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease 0.1s;
+}
+
+.dropdown:hover .dropdown-content::before {
+    transform: scaleX(1);
 }

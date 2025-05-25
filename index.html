@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>FrozenFox | Minecraft Plugin Developer</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/showcase.css">
     <link rel="icon" href="media/branding/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
@@ -18,8 +19,15 @@
             <nav>
                 <ul>
                     <li class="current"><a href="index.html">Home</a></li>
-                    <li><a href="starsmp/">Showcase</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="showcase.html" class="dropdown-btn">Showcase</a>
+                        <div class="dropdown-content">
+                            <a href="starsmp/">
+                                <img src="media/starsmp/staricons/ice.png" alt="Star SMP">
+                                <span>Star SMP</span>
+                            </a>
+                        </div>
+                    </li>                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -52,10 +60,33 @@
             </div>
         </div>
     </section>
-
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-card">
+                <h2>Want a Custom Plugin?</h2>
+                <p>I specialize in creating unique Minecraft experiences tailored to your vision</p>
+                <a href="contact.html" class="btn btn-cta">
+                    <span>Get in Touch</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
     <footer>
         <div class="container">
-            <p>uhhhhhh.. hi!</p>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="media/branding/logo.png" alt="FrozenFox Logo" class="logo">
+                    <h3>Frozen<span>Fox</span></h3>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="showcase.html">Showcase</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
         </div>
     </footer>
     <script src="js/particles.js"></script>

@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 2000);
     });
 
-    // Form submission feedback
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {

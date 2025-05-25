@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>FrozenFox | Plugin Showcase</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/showcase.css">
+    <link rel="icon" href="media/branding/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="branding">
+                <img src="media/branding/logo.png" alt="FrozenFox Logo" class="logo">
+                <h1>Frozen<span>Fox</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown current">
+                        <a href="showcase.html" class="dropdown-btn">Showcase</a>
+                        <div class="dropdown-content">
+                            <a href="starsmp/">
+                                <img src="media/starsmp/staricons/ice.png" alt="Star SMP">
+                                <span>Star SMP</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="showcase-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Plugin Showcase</h1>
+                <p>Explore my collection of custom Minecraft plugins</p>
+                <div class="hero-scroll">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 5v14M19 12l-7 7-7-7"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="hero-ice-overlay"></div>
+    </section>
+
+    <section class="plugins-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Plugins</h2>
+                <p class="section-subtitle">Each plugin is designed with unique mechanics and visual effects</p>
+            </div>
+            
+            <div class="plugins-grid">
+                <!-- Star SMP Plugin -->
+                <div class="plugin-card">
+                    <div class="plugin-card-inner">
+                        <div class="plugin-icon">
+                            <img src="media/starsmp/staricons/sound.png" alt="Star SMP Icon">
+                            <div class="icon-glow"></div>
+                        </div>
+                        <div class="plugin-content">
+                            <h3>Star SMP</h3>
+                            <p class="plugin-description">12 unique star types with special abilities and ultimate powers for dynamic SMP gameplay</p>
+                            <div class="plugin-features">
+                                <span class="feature-tag">PvP</span>
+                                <span class="feature-tag">Abilities</span>
+                                <span class="feature-tag">Custom Mechanics</span>
+                            </div>
+                        </div>
+                        <a href="starsmp/" class="plugin-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="card-ice-edge"></div>
+                </div>
+                <div class="plugin-card coming-soon">
+                    <div class="plugin-card-inner">
+                        <div class="plugin-icon">
+                            <img src="media/branding/logo.png" alt="Coming Soon">
+                            <div class="icon-glow"></div>
+                        </div>
+                        <div class="plugin-content">
+                            <h3>New Plugin</h3>
+                            <p class="plugin-description">Exciting new projects sonn to be in development</p>
+                            <div class="plugin-features">
+                                <span class="feature-tag">Coming Soon</span>
+                            </div>
+                        </div>
+                        <div class="plugin-link disabled">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card-ice-edge"></div>
+                    <div class="coming-soon-overlay">
+                        <span>Coming Soon</span>
+                        <div class="snowflakes">
+                            <div class="snowflake">❅</div>
+                            <div class="snowflake">❆</div>
+                            <div class="snowflake">❅</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-card">
+                <h2>Want a Custom Plugin?</h2>
+                <p>I specialize in creating unique Minecraft experiences tailored to your vision</p>
+                <a href="contact.html" class="btn btn-cta">
+                    <span>Get in Touch</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="media/branding/logo.png" alt="FrozenFox Logo" class="logo">
+                    <h3>Frozen<span>Fox</span></h3>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="showcase.html">Showcase</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/particles.js"></script>
+    <script src="js/showcase.js"></script>
+</body>
+</html>

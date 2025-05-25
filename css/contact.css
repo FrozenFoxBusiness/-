@@ -6,9 +6,9 @@ html {
 }
 
 .contact-hero {
-    background: linear-gradient(135deg, 
-        rgba(127, 211, 255, 0.2) 0%, 
-        rgba(74, 155, 199, 0.3) 100%),
+    background: linear-gradient(135deg,
+            rgba(127, 211, 255, 0.2) 0%,
+            rgba(74, 155, 199, 0.3) 100%),
         url('../media/branding/ice-bg.jpg') center/cover;
     color: white;
     padding: 150px 0 80px;
@@ -24,15 +24,22 @@ html {
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at 20% 50%, 
-        rgba(184, 242, 230, 0.15) 0%, 
-        transparent 40%);
+    background: radial-gradient(circle at 20% 50%,
+            rgba(184, 242, 230, 0.15) 0%,
+            transparent 40%);
     animation: pulse 12s ease infinite alternate;
 }
 
 @keyframes pulse {
-    0% { transform: scale(1); opacity: 0.8; }
-    100% { transform: scale(1.2); opacity: 0.4; }
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: scale(1.2);
+        opacity: 0.4;
+    }
 }
 
 .contact-hero h1 {
@@ -91,12 +98,10 @@ html {
 }
 
 .contact-card {
-    background: linear-gradient(
-        to bottom right,
-        rgba(127, 211, 255, 0) 0%,
-        rgba(127, 211, 255, 0.1) 50%,
-        rgba(127, 211, 255, 0) 100%
-    );
+    background: linear-gradient(to bottom right,
+            rgba(127, 211, 255, 0) 0%,
+            rgba(127, 211, 255, 0.1) 50%,
+            rgba(127, 211, 255, 0) 100%);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-radius: 15px;
@@ -129,7 +134,9 @@ html {
 }
 
 @keyframes shine {
-    0% { transform: translateX(-100%) rotate(30deg); }
+    0% {
+        transform: translateX(-100%) rotate(30deg);
+    }
 }
 
 .contact-card:hover {
@@ -291,19 +298,22 @@ html {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: linear-gradient(
-        to bottom right,
-        rgba(127, 211, 255, 0) 0%,
-        rgba(127, 211, 255, 0.05) 50%,
-        rgba(127, 211, 255, 0) 100%
-    );
+    background: linear-gradient(to bottom right,
+            rgba(127, 211, 255, 0) 0%,
+            rgba(127, 211, 255, 0.05) 50%,
+            rgba(127, 211, 255, 0) 100%);
     transform: rotate(30deg);
     animation: formShine 8s linear infinite;
 }
 
 @keyframes formShine {
-    0% { transform: translateX(-100%) rotate(30deg); }
-    100% { transform: translateX(100%) rotate(30deg); }
+    0% {
+        transform: translateX(-100%) rotate(30deg);
+    }
+
+    100% {
+        transform: translateX(100%) rotate(30deg);
+    }
 }
 
 .contact-form h2 {
@@ -410,16 +420,16 @@ html {
     .contact-hero {
         padding: 120px 0 60px;
     }
-    
+
     .contact-hero h1 {
         font-size: 2.5rem;
     }
-    
+
     .contact-grid {
         grid-template-columns: 1fr;
         padding: 0 20px;
     }
-    
+
     .contact-form-container {
         padding: 30px;
         margin: 0 20px;
@@ -431,11 +441,11 @@ html {
         flex-direction: column;
         align-items: flex-start;
     }
-    
+
     .contact-form-container {
         padding: 25px;
     }
-    
+
     .form-group input,
     .form-group textarea {
         padding: 12px 15px;
