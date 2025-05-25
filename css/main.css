@@ -536,3 +536,58 @@ footer .container {
 .dropdown:hover .dropdown-content::before {
     transform: scaleX(1);
 }
+
+/* Remove cursor for all elements */
+*, *::before, *::after {
+    cursor: none !important;
+}
+
+/* Specific cases that might need overriding */
+a, button, input, select, textarea, label, 
+[role="button"], [role="link"], [role="menu"], 
+[role="tab"], [role="option"], [role="checkbox"], 
+[role="radio"], [onclick], [href] {
+    cursor: none !important;
+}
+
+/* Scrollbar cursor */
+::-webkit-scrollbar, ::-webkit-scrollbar-button {
+    cursor: none !important;
+}
+
+/* Selection styling (keep your existing) */
+::selection {
+    background: rgba(127, 211, 255, 0.3);
+    color: var(--accent);
+}
+
+/* Your custom cursor styles (keep these) */
+.custom-cursor {
+    position: fixed;
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--primary);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: 
+        transform 0.15s ease,
+        width 0.3s ease,
+        height 0.3s ease;
+    box-shadow: 0 0 10px rgba(127, 211, 255, 0.5);
+}
+
+.cursor-follower {
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    background-color: var(--accent);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9998;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+    opacity: 0.7;
+    box-shadow: 0 0 5px rgba(127, 211, 255, 0.3);
+}
