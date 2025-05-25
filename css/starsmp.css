@@ -86,6 +86,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
     margin-bottom: 20px;
     padding-bottom: 15px;
     position: relative;
@@ -114,6 +115,7 @@
     border-radius: 20px;
     font-size: 0.9rem;
     font-weight: 700;
+    margin-left: auto;
 }
 
 .star-content {
@@ -325,4 +327,45 @@
     .star-abilities {
         grid-template-columns: 1fr;
     }
+}
+
+.star-name-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.star-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+
+/* More section */
+.star-media .image-pair {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.star-media .image-pair img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+code {
+    background: #f5f5f5;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-family: monospace;
+    color: #d63384;
+}
+
+.star-card h3 {
+    margin-top: 1.5em;
+}
+
+.star-card h3:first-child {
+    margin-top: 0;
 }
