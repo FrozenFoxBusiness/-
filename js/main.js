@@ -57,3 +57,26 @@ document.addEventListener('mouseup', () => {
         follower.style.height = '8px';
     }
 });
+
+const logo = document.querySelector('.branding .logo');
+const logoContainer = document.querySelector('.logo-container');
+let clickCount = 0;
+let timeout;
+
+logo.addEventListener('click', () => {
+  clickCount++;
+  clearTimeout(timeout);
+  timeout = setTimeout(() => clickCount = 0, 2000); 
+
+  if (clickCount === 5) {
+    triggerSpookyEffect();
+    clickCount = 0;
+  }
+});
+
+function triggerSpookyEffect() {
+  logoContainer.classList.add('easter-egg-active');
+  setTimeout(() => {
+    logoContainer.classList.remove('easter-egg-active');
+  }, 5000);
+}

@@ -6,6 +6,7 @@
     <title>Star SMP Showcase | FrozenFox</title>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/starsmp.css">
+    <link rel="stylesheet" href="../css/showcase.css">
     <link rel="icon" href="../media/branding/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
@@ -15,9 +16,12 @@
     <header>
         <div class="container">
             <div class="branding">
-                <img src="../media/branding/logo.png" alt="FrozenFox Logo" class="logo">
+                <div class="logo-container">
+                  <img src="../media/branding/logo.png" alt="FrozenFox Logo" class="logo">
+                  <span class="hidden-text">HI!</span>
+                </div>
                 <h1>Frozen<span>Fox</span></h1>
-            </div>
+              </div>
             <nav>
                 <ul>
                     <li><a href="../index.html">Home</a></li>
@@ -55,7 +59,7 @@
             
             <div class="category-content active" id="overworld">
                 <!-- LIFE-STAR -->
-                <div class="star-card">
+                <div class="star-card" data-star="life">
                     <div class="star-header">
                         <div class="star-name-container">
                             <img src="../media/starsmp/staricons/life.png" alt="Life Star" class="star-icon">
@@ -66,39 +70,41 @@
                     <div class="star-abilities">
                         <div class="ability">
                             <h3>Passive</h3>
-                            <p>4 extra hearts</p>
+                            <p>You have a permanent 4 extra hearts</p>
                         </div>
                         <div class="ability">
                             <h3>Ability: Life Drain</h3>
-                            <p>Gain half a heart per crit for 20 seconds (60s cooldown)</p>
+                            <p>Gain half a heart per crit for 20 seconds after use (60s cooldown)</p>
                         </div>
                         <div class="ability">
                             <h3>Ultimate: Total Restoration</h3>
-                            <p>Full heal and saturation for you and trusted allies (120s cooldown)</p>
+                            <p>Full heal and recover saturation for you and your trusted allies (120s cooldown)</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- ICE-STAR -->
-                <div class="star-card">
+                <div class="star-card" data-star="ice">
                     <div class="star-header">
+                        <div class="star-name-container">
                             <img src="../media/starsmp/staricons/ice.png" alt="Ice Star" class="star-icon">
-                        <h2>ICE-STAR</h2>
+                            <h2>ICE-STAR</h2>
+                        </div>
                         <span class="star-type">Overworld - Haste 1</span>
                     </div>
                     <div class="star-content">
                         <div class="star-abilities">
                             <div class="ability">
                                 <h3>Passive</h3>
-                                <p>Speed 5 on ice + every 8 hits 50% chance to apply slowness 4</p>
+                                <p>Speed 5 on ice + every 8 hits you have a 50% chance to apply slowness 4</p>
                             </div>
                             <div class="ability">
                                 <h3>Ability: Ice Ring</h3>
-                                <p>Creates an ice domain for 15 seconds made from blue ice (60s cooldown)</p>
+                                <p>Creates an ice domain for 15 seconds made from blue ice and traps enemies inside (60s cooldown)</p>
                             </div>
                             <div class="ability">
                                 <h3>Ultimate: Sub Zero</h3>
-                                <p>Full stuns and holds enemies in place for 10s (120s cooldown)</p>
+                                <p>Full stuns and holds enemies within ice for 10s (120s cooldown)</p>
                             </div>
                         </div>
                         <div class="star-media">
@@ -121,49 +127,53 @@
                 </div>
 
                 <!-- THUNDER-STAR -->
-                <div class="star-card">
+                <div class="star-card" data-star="thunder">
                     <div class="star-header">
+                        <div class="star-name-container">
                             <img src="../media/starsmp/staricons/thunder.png" alt="Thunder Star" class="star-icon">
-                        <h2>THUNDER-STAR</h2>
+                            <h2>THUNDER-STAR</h2>
+                        </div>
                         <span class="star-type">Overworld - Haste 1</span>
                     </div>
                     <div class="star-abilities">
                         <div class="ability">
                             <h3>Passive</h3>
-                            <p>Speed 2 every 15 hits thunder strike</p>
+                            <p>Permanent Speed 2 and a Thunderstike every 15 hits</p>
                         </div>
                         <div class="ability">
                             <h3>Ability: Bolt</h3>
-                            <p>Shoot a thunderbolt that disables stars for 30s and does 4 hearts (80s cooldown)</p>
+                            <p>Shoot a Thunderbolt that disables stars for 30s (80s cooldown)</p>
                         </div>
                         <div class="ability">
-                            <h3>Ultimate: Always Strike Lightning</h3>
-                            <p>Every hit = thunder strike for 8 seconds and speed 4 (120s cooldown)</p>
+                            <h3>Ultimate: Guaranteed Strike</h3>
+                            <p>Strike Lightning on every hit and gain Speed IV for 8 Seconds (120s cooldown)</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- SOUND-STAR -->
-                <div class="star-card">
+                <div class="star-card" data-star="sound">
                     <div class="star-header">
+                        <div class="star-name-container">
                         <img src="../media/starsmp/staricons/sound.png" alt="Sound Star" class="star-icon">
                         <h2>SOUND-STAR</h2>
-                        <span class="star-type">Overworld - Haste 1</span>
+                    </div>
+                    <span class="star-type">Overworld - Haste 1</span>
                     </div>
                     <div class="star-content">
                         <div class="star-abilities">
                             <div class="ability">
                                 <h3>Passive</h3>
-                                <p>Ultimate has 2 forms (sneaking/standing)</p>
+                                <p>Gives the Ultimate 2 forms, Shout Form and Scream Form (sneaking/standing)</p>
                             </div>
                             <div class="ability">
                                 <h3>Ability: Sword Sing</h3>
-                                <p>Movements with sword as fluid as with a whip for 10 seconds. Each successful hit increases cooldown of hit enemy by 10s</p>
+                                <p>Movements with your sword become as fluid as with a whip for 10 seconds. Each successful hit increases cooldown of hit enemy by 10s</p>
                             </div>
                             <div class="ability">
                                 <h3>Ultimate</h3>
-                                <p><strong>Form 1 (Standing):</strong> AOE around you that flings people away (4 hearts damage)<br>
-                                <strong>Form 2 (Sneaking):</strong> Forward attack that increases cooldown of hit players by 15s (5.5 hearts damage)<br>
+                                <p><strong>Form 1 (Shout):</strong> AOE around you that flings people away (4 hearts damage)<br>
+                                <strong>Form 2 (Scream):</strong> Forward attack that increases cooldown of hit players by 15s (5.5 hearts damage)<br>
                                 (120s cooldown)</p>
                             </div>
                         </div>
@@ -203,16 +213,18 @@
 
             <div class="category-content" id="nether">
                 <!-- FIRE-STAR -->
-                <div class="star-card">
+                <div class="star-card" data-star="fire">
                     <div class="star-header">
-                        <img src="../media/starsmp/staricons/fire.png" alt="Fire Star" class="star-icon">
-                        <h2>FIRE-STAR</h2>
+                        <div class="star-name-container">
+                            <img src="../media/starsmp/staricons/fire.png" alt="Fire Star" class="star-icon">
+                            <h2>FIRE-STAR</h2>
+                        </div>
                         <span class="star-type">Nether - Fire Res</span>
                     </div>
                     <div class="star-abilities">
                         <div class="ability">
                             <h3>Passive</h3>
-                            <p>Every 12 hits 50% chance to set enemy on fire + /togglefireglow</p>
+                            <p>Every 12 hits you have a 50% chance to set enemy on fire, you can use /togglefireglow to make enemies within a 6 block radius glow</p>
                         </div>
                         <div class="ability">
                             <h3>Ability: Fireflies</h3>
@@ -226,10 +238,12 @@
                 </div>
 
                 <!-- STRENGTH-STAR -->
-                <div class="star-card">
+                <div class="star-card" data-star="strength">
                     <div class="star-header">
-                        <img src="../media/starsmp/staricons/strength.png" alt="Strength Star" class="star-icon">
-                        <h2>STRENGTH-STAR</h2>
+                        <div class="star-name-container">
+                            <img src="../media/starsmp/staricons/strength.png" alt="Strength Star" class="star-icon">
+                            <h2>STRENGTH-STAR</h2>
+                        </div>
                         <span class="star-type">Nether - Fire Res</span>
                     </div>
                     <div class="star-abilities">
@@ -239,26 +253,28 @@
                         </div>
                         <div class="ability">
                             <h3>Ability: Rage</h3>
-                            <p>Lose hearts for 30s of strength 2 (75s cooldown)</p>
+                            <p>Lose 4 hearts for 30 seconds of Strength II (75s cooldown)</p>
                         </div>
                         <div class="ability">
                             <h3>Ultimate: Revenge Counter</h3>
-                            <p>Charge ultimate's damage by taking damage from players for first 10s, then deal all accumulated damage in one hit (120s cooldown)</p>
+                            <p>Charge the ultimate's damage by taking damage from players for first 10s, then deal all accumulated damage in one hit (120s cooldown)</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- WITHER-STAR -->
-                <div class="star-card">
+                <div class="star-card" data-star="wither">
                     <div class="star-header">
-                        <img src="../media/starsmp/staricons/wither.png" alt="Wither Star" class="star-icon">
-                        <h2>WITHER-STAR</h2>
+                        <div class="star-name-container">
+                            <img src="../media/starsmp/staricons/wither.png" alt="Wither Star" class="star-icon">
+                            <h2>WITHER-STAR</h2>
+                        </div>
                         <span class="star-type">Nether - Fire Res</span>
                     </div>
                     <div class="star-abilities">
                         <div class="ability">
                             <h3>Passive</h3>
-                            <p>Every 8 hits 50% chance to apply wither 2 for 3s and gain 2 extra hearts for 10s</p>
+                            <p>Every 8 hits you have a 50% chance to apply Wither II to whoever you attack for 3s and gain 2 extra hearts for 10s</p>
                         </div>
                         <div class="ability">
                             <h3>Ability: Decay</h3>
@@ -266,16 +282,18 @@
                         </div>
                         <div class="ability">
                             <h3>Ultimate: Wither Head</h3>
-                            <p>Shoots 3 wither skeleton heads each dealing 1 heart damage and applying wither (120s cooldown)</p>
+                            <p>Shoots 5 wither skeleton heads each dealing 2 hearts of damage and applying wither (120s cooldown)</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- GHOST-STAR -->
-                <div class="star-card">
+                <div class="star-card" data-star="ghost">
                     <div class="star-header">
-                        <img src="../media/starsmp/staricons/ghost.png" alt="Ghost Star" class="star-icon">
-                        <h2>GHOST-STAR</h2>
+                        <div class="star-name-container">
+                            <img src="../media/starsmp/staricons/ghost.png" alt="Ghost Star" class="star-icon">
+                            <h2>GHOST-STAR</h2>
+                        </div>
                         <span class="star-type">Nether - Fire Res</span>
                     </div>
                     <div class="star-abilities">
@@ -285,7 +303,7 @@
                         </div>
                         <div class="ability">
                             <h3>Ability: Haunt</h3>
-                            <p>Most recently hit player gets slowness and blindness, stars pulse glowing for 15s (90s cooldown)</p>
+                            <p>The last hit player gets slowness and blindness, and also starts glowing in pulses for 15s (90s cooldown)</p>
                         </div>
                         <div class="ability">
                             <h3>Ultimate: Ghost Form</h3>
@@ -297,56 +315,62 @@
 
             <div class="category-content" id="end">
                 <!-- MATRIX-STAR -->
-                <div class="star-card">
+                <div class="star-card" data-star="matrix">
                     <div class="star-header">
-                        <img src="../media/starsmp/staricons/matrix.png" alt="Matrix Star" class="star-icon">
-                        <h2>MATRIX-STAR</h2>
+                        <div class="star-name-container">
+                            <img src="../media/starsmp/staricons/matrix.png" alt="Matrix Star" class="star-icon">
+                            <h2>MATRIX-STAR</h2>
+                        </div>
                         <span class="star-type">End - Chorus Fruit Gaps</span>
                     </div>
                     <div class="star-abilities">
                         <div class="ability">
                             <h3>Passive</h3>
-                            <p>On half health gain resistance 1</p>
+                            <p>While on half health gain Resistance I</p>
                         </div>
                         <div class="ability">
                             <h3>Ability: Disable</h3>
-                            <p>Disable wind charges for 8 seconds (60s cooldown)</p>
+                            <p>Disable wind charges for 8 seconds and stop all players movements (60s cooldown)</p>
                         </div>
                         <div class="ability">
                             <h3>Ultimate: Screen Glitch</h3>
-                            <p>For 10s all enemies in 3 block AOE get blinded (via texture pack) and user gains haste 10 (120s cooldown)</p>
+                            <p>For 10s all enemies in 3 block AOE have their screen glitched and the user gains Haste X (120s cooldown)</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- VOID-STAR -->
-                <div class="star-card">
+                <div class="star-card" data-star="void">
                     <div class="star-header">
-                        <img src="../media/starsmp/staricons/void.png" alt="Void Star" class="star-icon">
-                        <h2>VOID-STAR</h2>
+                        <div class="star-name-container">
+                            <img src="../media/starsmp/staricons/void.png" alt="Void Star" class="star-icon">
+                            <h2>VOID-STAR</h2>
+                        </div>
                         <span class="star-type">End - Chorus Fruit Gaps</span>
                     </div>
                     <div class="star-abilities">
                         <div class="ability">
                             <h3>Passive</h3>
-                            <p>Pushes you out of void + /togglevoidinvis</p>
+                            <p>You are unable to fall into the void, being pushed up from it. You also have toggelable invisibility via /togglevoidinvis</p>
                         </div>
                         <div class="ability">
                             <h3>Ability: Chain</h3>
-                            <p>Chain enemies to ground (poison effect) for 15s (75s cooldown)</p>
+                            <p>Chain enemies to ground and poison them for 15s (75s cooldown)</p>
                         </div>
                         <div class="ability">
                             <h3>Ultimate: Binding Void</h3>
-                            <p>Chains enemies to you and blinds them (15s), blinds their hearts for 25s (120s cooldown)</p>
+                            <p>Chains enemies to you and blinds them (15s), blacks out their hearts for 25s (120s cooldown)</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- AIR-STAR -->
-                <div class="star-card">
+                <div class="star-card" data-star="air">
                     <div class="star-header">
-                        <img src="../media/starsmp/staricons/air.png" alt="Air Star" class="star-icon">
-                        <h2>AIR-STAR</h2>
+                        <div class="star-name-container">
+                            <img src="../media/starsmp/staricons/air.png" alt="Air Star" class="star-icon">
+                            <h2>AIR-STAR</h2>
+                        </div>
                         <span class="star-type">End - Chorus Fruit Gaps</span>
                     </div>
                     <div class="star-abilities">
@@ -357,20 +381,22 @@
                         </div>
                         <div class="ability">
                             <h3>Ability: Tornado</h3>
-                            <p>Suck every player in 15 block radius and spit them out (60s cooldown)</p>
+                            <p>Suck in every player in 15 block radius and spit them out (60s cooldown)</p>
                         </div>
                         <div class="ability">
                             <h3>Ultimate: Dash</h3>
-                            <p>Dash forward dealing 2.5 hearts, hiding hearts briefly and applying poison (60s cooldown)</p>
+                            <p>Dash forward dealing 2.5 hearts to anybody in your trajectory, hiding hearts briefly and applying poison (60s cooldown)</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- PURPLE-STAR -->
-                <div class="star-card">
+                <div class="star-card" data-star="purple">
                     <div class="star-header">
-                        <img src="../media/starsmp/staricons/purple.png" alt="Purple Star" class="star-icon">
-                        <h2>PURPLE-STAR</h2>
+                        <div class="star-name-container">
+                            <img src="../media/starsmp/staricons/purple.png" alt="Purple Star" class="star-icon">
+                            <h2>PURPLE-STAR</h2>
+                        </div>
                         <span class="star-type">End - Chorus Fruit Gaps</span>
                     </div>
                     <div class="star-abilities">
@@ -380,7 +406,7 @@
                         </div>
                         <div class="ability">
                             <h3>Ability: Marked for Death</h3>
-                            <p>Marks 1 enemy in 20 block range for death (shadow step multiplier increases to 2.5x) (80s cooldown)</p>
+                            <p>Marks 1 enemy in 20 block range for death (Shadow Step multiplier increases to 2.5x) (80s cooldown)</p>
                         </div>
                         <div class="ability">
                             <h3>Ultimate: Shadow Step</h3>
@@ -388,6 +414,33 @@
                         </div>
                     </div>
                 </div>
+                <div class="star-card" data-star="draconic">
+                    <div class="star-header">
+                        <div class="star-name-container">
+                            <img src="../media/starsmp/staricons/draconic.png" alt="Draconic Star" class="star-icon">
+                            <h2>DRACONIC-STAR</h2>
+                        </div>
+                        <span class="star-type">End - Dragon's Breath</span>
+                    </div>
+                    <div class="star-abilities">
+                        <div class="ability">
+                            <h3>Passive</h3>
+                            <p>Can consume Dragon's Breath to gain 4 extra hearts for 2 minutes (max 8 extra hearts, only 16 bottles allowed)</p>
+                        </div>
+                        <div class="ability">
+                            <h3>Ability 1: Draconic Fling</h3>
+                            <p>Flings everyone in a 5 block radius away (60s cooldown)</p>
+                        </div>
+                        <div class="ability">
+                            <h3>Ability 2: Draconic Blink</h3>
+                            <p>Teleports you wherever you look, grants Resistance I and Strength II for 15s (45s cooldown)</p>
+                        </div>
+                        <div class="ability">
+                            <h3>Ultimate: Draconic Meteor</h3>
+                            <p>Summons a meteor that forms a dragon's breath cloud upon landing</p>
+                        </div>
+                    </div>
+                </div>    
             </div>
             <div class="category-content" id="more">
                 <!-- Falling Star Ritual -->
