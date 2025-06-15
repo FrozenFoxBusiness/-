@@ -130,7 +130,7 @@ html {
 
 .contact-card:hover::before {
     opacity: 1;
-    animation: shine 1.5s linear;
+    animation: shine 0.8s linear;
 }
 
 @keyframes shine {
@@ -449,5 +449,101 @@ html {
     .form-group input,
     .form-group textarea {
         padding: 12px 15px;
+    }
+}
+
+/* Hire Me Section */
+.hire-me {
+    background: linear-gradient(135deg, rgba(29, 191, 115, 0.08) 0%, rgba(29, 191, 115, 0.15) 100%);
+    padding: 70px 0;
+    border-top: 1px solid rgba(29, 191, 115, 0.15);
+    border-bottom: 1px solid rgba(29, 191, 115, 0.15);
+    position: relative;
+    overflow: hidden;
+}
+
+.hire-me::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+        circle at 70% 50%, 
+        rgba(127, 211, 255, 0.08) 0%, 
+        transparent 60%
+    );
+}
+
+.hire-me-content {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.hire-me h2 {
+    color: var(--accent);
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.hire-me p {
+    color: var(--text-light);
+    font-size: 1.2rem;
+    margin-bottom: 35px;
+    line-height: 1.6;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fiverr-btn {
+    display: inline-block;
+    background: #1DBF73;
+    color: white !important;
+    padding: 18px 40px;
+    border-radius: 8px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 15px rgba(29, 191, 115, 0.3);
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.fiverr-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(29, 191, 115, 0.4);
+    background: #18a966;
+}
+
+.fiverr-btn:active {
+    transform: translateY(-1px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hire-me {
+        padding: 60px 0;
+    }
+    
+    .hire-me h2 {
+        font-size: 2rem;
+    }
+    
+    .hire-me p {
+        font-size: 1.1rem;
+    }
+    
+    .fiverr-btn {
+        padding: 16px 32px;
     }
 }
