@@ -1,0 +1,84 @@
+# Crafting Recipes
+# Define the 3x3 shape and ingredients for each item.
+# Materials must be valid Spigot Material names (e.g., "DIAMOND_BLOCK", "NETHER_STAR").
+recipes:
+  dune-spark:
+    shape:
+      - "DGD"
+      - "RNR"
+      - "DGD"
+    ingredients:
+      R: "RABBIT_FOOT"
+      G: "GOLD_ORE"
+      D: "DUNE_ARMOR_TRIM_SMITHING_TEMPLATE"
+      N: "NETHERITE_BOOTS"
+  breeze-spark:
+    shape:
+      - "BTB"
+      - "PHP"
+      - "BTB"
+    ingredients:
+      P: "POWDER_SNOW_BUCKET"
+      H: "HEAVY_CORE"
+      B: "BREEZE_ROD"
+      T: "FLOW_ARMOR_TRIM_SMITHING_TEMPLATE"
+  darkness-spark:
+    shape:
+      - "EOE"
+      - "SDS"
+      - "EOE"
+    ingredients:
+      E: "ENDER_EYE"
+      O: "OBSIDIAN"
+      S: "SCULK_SENSOR"
+      D: "MUSIC_DISC_5"
+  emerald-spark:
+    shape:
+      - "EOE"
+      - "SDS"
+      - "EOE"
+    ingredients:
+      E: "EMERALD_BLOCK"
+      O: "ENCHANTING_TABLE"
+      S: "BOOKSHELF"
+      D: "END_CRYSTAL"
+  haste-spark:
+    shape:
+      - "BOB"
+      - "PGP"
+      - "BOB"
+    ingredients:
+      G: "GOLDEN_APPLE"
+      O: "OBSIDIAN"
+      B: "GOLD_BLOCK"
+      P: "NETHERITE_PICKAXE"
+  invisibility-spark:
+    shape:
+      - "IGI"
+      - "GFG"
+      - "IGI"
+    ingredients:
+      G: "END_CRYSTAL"
+      I: "POTION"
+      F: "BEACON"
+  strength-spark:
+    shape:
+      - "NUN"
+      - "SWS"
+      - "NUN"
+    ingredients:
+      W: "NETHER_WART"
+      N: "NETHERITE_INGOT"
+      S: "NETHERITE_SWORD"
+      U: "NETHERITE_UPGRADE_SMITHING_TEMPLATE"
+  dragon-spark:
+    shape:
+      - "SCS"
+      - "NEN"
+      - "SCS"
+    ingredients:
+      E: "DRAGON_EGG"
+      N: "END_ROD"
+      S: "ELYTRA"
+      C: "END_CRYSTAL"
+
