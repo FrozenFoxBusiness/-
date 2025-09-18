@@ -4,7 +4,7 @@
     min-height: 400px;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, var(--dark) 0%, #0e1a2f 100%);
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
     overflow: hidden;
     padding-top: 80px;
 }
@@ -20,11 +20,9 @@
 .hero-content h1 {
     font-size: 3.5rem;
     margin-bottom: 20px;
-    background: linear-gradient(to right, var(--primary), var(--accent));
+    background: -webkit-linear-gradient(45deg, var(--primary), var(--secondary));
     -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    text-shadow: 0 2px 10px var(--glow);
+    -webkit-text-fill-color: transparent;
 }
 
 .hero-content p {
@@ -71,22 +69,7 @@
 }
 
 .plugin-card {
-    position: relative;
-    background: rgba(26, 34, 56, 0.6);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border-radius: 12px;
-    overflow: hidden;
-    border: 1px solid rgba(127, 211, 255, 0.1);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    transition: all 0.4s ease;
-    height: 100%;
-}
-
-.plugin-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 40px var(--glow);
-    border-color: var(--accent);
+    /* The .card styles from main.css will apply here */
 }
 
 .plugin-card-inner {
@@ -102,33 +85,18 @@
     width: 60px;
     height: 60px;
     border-radius: 12px;
-    background: rgba(127, 211, 255, 0.1);
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
     position: relative;
-    border: 1px solid rgba(127, 211, 255, 0.2);
 }
 
 .plugin-icon img {
     width: 40px;
     height: 40px;
     object-fit: contain;
-}
-
-.icon-glow {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 12px;
-    background: radial-gradient(circle at center, var(--glow) 0%, transparent 70%);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.plugin-card:hover .icon-glow {
-    opacity: 1;
 }
 
 .plugin-content {
@@ -138,7 +106,9 @@
 .plugin-content h3 {
     font-size: 1.5rem;
     margin-bottom: 15px;
-    color: var(--accent);
+    background: -webkit-linear-gradient(45deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .plugin-description {
@@ -155,12 +125,15 @@
 }
 
 .feature-tag {
-    background: rgba(127, 211, 255, 0.1);
-    color: var(--primary);
+    background: var(--light);
+    color: var(--text-light);
     padding: 4px 12px;
     border-radius: 20px;
     font-size: 0.8rem;
     font-weight: 500;
+    border: 1px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, var(--primary), var(--secondary));
 }
 
 .plugin-link {
@@ -171,44 +144,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(127, 211, 255, 0.1);
-    color: var(--primary);
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    color: #FFFFFF;
     transition: all 0.3s ease;
     margin-top: auto;
 }
 
 .plugin-link:hover {
-    background: var(--primary);
-    color: var(--dark);
-    transform: translateX(5px);
-}
-
-.plugin-link.disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-}
-
-
-/* Coming Soon Card */
-.coming-soon {
-    position: relative;
-}
-
-.coming-soon-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(10, 14, 23, 0.8);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
-    color: var(--accent);
-    font-weight: 700;
-    font-size: 1.2rem;
+    transform: scale(1.1);
 }
 
 
@@ -218,34 +161,16 @@
 }
 
 .cta-card {
-    background: linear-gradient(135deg, rgba(26, 34, 56, 0.8) 0%, rgba(10, 14, 23, 0.9) 100%);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border-radius: 16px;
-    padding: 50px;
+    /* This will be styled by the .card class from main.css */
     text-align: center;
-    border: 1px solid rgba(127, 211, 255, 0.2);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
-    position: relative;
-    overflow: hidden;
-}
-
-.cta-card::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle at center, var(--glow) 0%, transparent 70%);
-    opacity: 0.3;
-    animation: rotate 20s linear infinite;
 }
 
 .cta-card h2 {
     font-size: 2.2rem;
     margin-bottom: 15px;
-    color: var(--accent);
+    background: -webkit-linear-gradient(45deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     position: relative;
 }
 
@@ -349,62 +274,6 @@
     }
 }
 
-body.light-mode .showcase-hero {
-    background: var(--dark);
-}
-
-body.light-mode .hero-content h1 {
-    color: var(--primary);
-    background: none;
-    -webkit-background-clip: unset;
-    background-clip: unset;
-    text-shadow: none;
-}
-
-body.light-mode .hero-content p,
-body.light-mode .section-subtitle,
-body.light-mode .plugin-description {
-    color: var(--text);
-}
-
-body.light-mode .plugin-card {
-    background: var(--light);
-    border: 1px solid #dee2e6;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-}
-
-body.light-mode .plugin-icon {
-    background: rgba(0, 123, 255, 0.1);
-    border: 1px solid rgba(0, 123, 255, 0.2);
-}
-
-body.light-mode .feature-tag {
-    background: rgba(0, 123, 255, 0.1);
-    color: var(--primary);
-}
-
-body.light-mode .plugin-link {
-    background: rgba(0, 123, 255, 0.1);
-    color: var(--primary);
-}
-
-body.light-mode .plugin-link:hover {
-    background: var(--primary);
-    color: var(--light);
-}
-
-body.light-mode .cta-card {
-    background: var(--light);
-    border: 1px solid #dee2e6;
-}
-
-body.light-mode .cta-card::before {
-    display: none;
-}
-
-body.light-mode .plugin-content h3 {
-    color: var(--primary);
-}
 
 @media (max-width: 768px) {
     .hero-content h1 {

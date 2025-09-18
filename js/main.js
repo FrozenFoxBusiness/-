@@ -88,21 +88,19 @@ const body = document.body;
 function applyTheme(theme) {
     if (theme === 'light') {
         body.classList.add('light-mode');
-        if (themeToggle) themeToggle.checked = true;
     } else {
         body.classList.remove('light-mode');
-        if (themeToggle) themeToggle.checked = false;
     }
 }
 
 if (themeToggle) {
-    themeToggle.addEventListener('change', () => {
-        if (themeToggle.checked) {
-            localStorage.setItem('theme', 'light');
-            applyTheme('light');
-        } else {
+    themeToggle.addEventListener('click', () => {
+        if (body.classList.contains('light-mode')) {
             localStorage.setItem('theme', 'dark');
             applyTheme('dark');
+        } else {
+            localStorage.setItem('theme', 'light');
+            applyTheme('light');
         }
     });
 }
