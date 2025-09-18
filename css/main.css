@@ -1,21 +1,26 @@
 :root {
-    --primary: #7fd3ff;
-    /* Bright icy blue */
-    --primary-dark: #4a9bc7;
-    /* Darker ice blue */
-    --secondary: #a0e4ff;
-    /* Light frost accent */
-    --dark: #0a0e17;
-    /* Deep navy background */
-    --light: #1a2238;
-    /* Frosted card background */
-    --accent: #b8f2e6;
-    /* Minty frost accent */
-    --text: #e6f1ff;
-    /* Bright text */
-    --text-light: #a7b8d1;
-    /* Subdued text */
-    --glow: rgba(127, 211, 255, 0.15);
+    /* Dark Mode by default */
+    --primary: #007BFF;
+    --primary-dark: #0056b3;
+    --secondary: #6C757D;
+    --dark: #1A1A1A;
+    --light: #2C2C2C;
+    --accent: #007BFF;
+    --text: #EAEAEA;
+    --text-light: #999999;
+    --glow: rgba(0, 123, 255, 0.15);
+}
+
+body.light-mode {
+    --primary: #007BFF;
+    --primary-dark: #0056b3;
+    --secondary: #6C757D;
+    --dark: #F8F9FA;
+    --light: #FFFFFF;
+    --accent: #007BFF;
+    --text: #212529;
+    --text-light: #6C757D;
+    --glow: rgba(0, 123, 255, 0.1);
 }
 
 * {
@@ -44,28 +49,6 @@ body::before {
     z-index: -2;
 }
 
-body::after {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('../media/branding/ice-pattern.png') repeat;
-    opacity: 0.03;
-    z-index: -1;
-    animation: iceFlow 60s linear infinite;
-}
-
-@keyframes iceFlow {
-    0% {
-        background-position: 0 0;
-    }
-
-    100% {
-        background-position: 1000px 1000px;
-    }
-}
 
 h1,
 h2,
@@ -415,6 +398,96 @@ footer .container {
     100% {
         background-position: 0% 50%;
     }
+}
+
+/* Theme Switcher */
+.theme-switcher {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.theme-switcher input {
+    display: none;
+}
+
+.theme-switcher label {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 26px;
+    background-color: var(--light);
+    border-radius: 26px;
+    border: 1px solid var(--primary);
+    transition: background-color 0.3s;
+}
+
+.toggle-indicator {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 20px;
+    height: 20px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.theme-switcher input:checked + label .toggle-indicator {
+    transform: translateX(24px);
+}
+
+body.light-mode::before {
+    background: var(--dark);
+}
+
+body.light-mode header {
+    background: rgba(248, 249, 250, 0.85);
+    border-bottom: 1px solid #dee2e6;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .card {
+    background: #FFFFFF;
+    border: 1px solid #dee2e6;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+body.light-mode .card:hover {
+    box-shadow: 0 15px 30px rgba(0, 123, 255, 0.1);
+}
+
+body.light-mode footer {
+    background: #F8F9FA;
+    border-top: 1px solid #dee2e6;
+}
+
+body.light-mode footer::before {
+    display: none;
+}
+
+body.light-mode .dropdown-content {
+    background: rgba(255, 255, 255, 0.98);
+    border: 1px solid #dee2e6;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .dropdown-content a:hover {
+    background: rgba(0, 123, 255, 0.1);
+}
+
+body.light-mode .showcase {
+    background: var(--primary);
+    color: var(--light);
+}
+
+body.light-mode .btn {
+    color: var(--light);
+}
+
+body.light-mode .btn:hover {
+    color: var(--light);
 }
 
 @media (max-width: 768px) {
