@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FrozenFox | Minecraft Plugin Developer</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/showcase.css">
+    <link rel="stylesheet" href="css/new-main.css">
     <link rel="icon" href="media/branding/favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="custom-cursor"></div>
-<div class="cursor-follower"></div>
+    <div class="custom-cursor"></div>
+    <div class="cursor-follower"></div>
+
     <header>
         <div class="container">
             <div class="branding">
@@ -20,25 +20,9 @@
             </div>
             <nav>
                 <ul>
-                    <li class="current"><a href="index.html">Home</a></li>
-                    <li class="dropdown">
-                        <a href="showcase.html" class="dropdown-btn">Showcase</a>
-                        <div class="dropdown-content">
-                            <a href="starsmp/">
-                                <img src="media/starsmp/staricons/ice.png" alt="Star SMP">
-                                <span>Star SMP</span>
-                            </a>
-                            <a href="astralites/">
-                                <img src="media/astralitessmp/Nether_Star.gif" alt="Astralites">
-                                <span>Astralites</span>
-                            </a>
-                            <a href="sparksmp/">
-                                <img src="sparksmp/sparkicons/breeze.png" alt="Spark SMP">
-                                <span>Spark SMP</span>
-                            </a>
-                        </div>
-                    </li>                    
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#showcase">Showcase</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <button class="theme-toggle-btn" id="theme-toggle">
@@ -48,62 +32,1226 @@
         </div>
     </header>
 
-    <section class="showcase">
-        <div class="container">
-            <h1>Minecraft Plugins</h1>
-            <p>Custom-crafted SMP plugins with unique mechanics and polished experiences based on your vision</p>
-            <a href="starsmp/" class="btn">View Star SMP Showcase</a>
-        </div>
-    </section>
+    <main>
+        <section id="home" class="hero">
+            <div id="particles-js"></div>
+            <div class="container">
+                <h1>Custom Minecraft Plugins</h1>
+                <p>Bringing your vision to life with unique mechanics and polished experiences.</p>
+                <a href="#showcase" class="btn">Explore My Work</a>
+            </div>
+        </section>
 
-    <section class="services">
-        <div class="container">
-            <h2>Plugin Development Services</h2>
-            <div class="service-cards">
-                <div class="card">
-                    <h3>Custom SMP Mechanics</h3>
-                    <p>Unique gameplay systems tailored to your server's theme and vision</p>
-                </div>
-                <div class="card">
-                    <h3>High Quality</h3>
-                    <p>I'll try to ensure high quality and bug free plugins</p>
-                </div>
-                <div class="card">
-                    <h3>Performance Optimization</h3>
-                    <p>I'll try to create lightweight code that won't lag your server even with heavy use</p>
+        <section id="about" class="about">
+            <div class="container">
+                <h2>Plugin Development Services</h2>
+                <div class="service-cards">
+                    <div class="card">
+                        <h3>Custom SMP Mechanics</h3>
+                        <p>Unique gameplay systems tailored to your server's theme and vision.</p>
+                    </div>
+                    <div class="card">
+                        <h3>High Quality</h3>
+                        <p>I deliver high-quality, bug-free plugins that enhance your server.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Performance Optimization</h3>
+                        <p>Lightweight code that won't lag your server, even with heavy use.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-card">
-                <h2>Want a Custom Plugin?</h2>
-                <p>I specialize in creating unique Minecraft experiences tailored to your vision</p>
-                <a href="contact.html" class="btn btn-cta">
-                    <span>Get in Touch</span>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
-                    </svg>
-                </a>
+        </section>
+
+        <section id="showcase" class="showcase">
+            <div class="container">
+                <h2>Plugin Showcase</h2>
+                <div class="showcase-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="starsmp">Star SMP</button>
+                    <button class="filter-btn" data-filter="astralites">Astralites</button>
+                    <button class="filter-btn" data-filter="sparksmp">Spark SMP</button>
+                </div>
+
+                <div class="showcase-grid">
+                    <!-- Star SMP -->
+                    <div class="plugin-card" data-category="starsmp">
+                        <div class="plugin-card-header">
+                            <img src="media/starsmp/staricons/ice.png" alt="Star SMP Icon">
+                            <h3>Star SMP</h3>
+                        </div>
+                        <p>12 unique star types with special abilities and ultimate powers for dynamic SMP gameplay.</p>
+                        <button class="btn btn-details">View Details</button>
+                    </div>
+
+                    <!-- Astralites -->
+                    <div class="plugin-card" data-category="astralites">
+                        <div class="plugin-card-header">
+                            <img src="media/astralitessmp/Nether_Star.gif" alt="Astralites Icon">
+                            <h3>Astralites</h3>
+                        </div>
+                        <p>A hardcore survival experience with a unique twist, featuring 18 unique stars.</p>
+                        <button class="btn btn-details">View Details</button>
+                    </div>
+
+                    <!-- Spark SMP -->
+                    <div class="plugin-card" data-category="sparksmp">
+                        <div class="plugin-card-header">
+                            <img src="media/sparksmp/sparkicons/breeze.png" alt="Spark SMP Icon">
+                            <h3>Spark SMP</h3>
+                        </div>
+                        <p>A unique SMP experience with custom sparks and abilities.</p>
+                        <button class="btn btn-details">View Details</button>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <p>Contact me for plugin inquiries, collaborations, or support.</p>
+                <div class="contact-methods">
+                    <div class="contact-card">
+                        <h3>Discord</h3>
+                        <p>frozennfox</p>
+                    </div>
+                    <div class="contact-card">
+                        <h3>Email</h3>
+                        <p>ffrozennfox@gmail.com</p>
+                    </div>
+                </div>
+                <a href="https://www.fiverr.com/frrozenfox?public_mode=true" class="btn" target="_blank">Hire Me on Fiverr</a>
+            </div>
+        </section>
+    </main>
+
     <footer>
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <img src="media/branding/logo.png" alt="FrozenFox Logo" class="logo">
-                    <h3>Frozen<span>Fox</span></h3>
+            <p>&copy; 2024 FrozenFox. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Plugin Details Modals -->
+    <div id="details-modal-container">
+        <!-- Star SMP Modal -->
+        <div id="starsmp-details" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>Star SMP</h2>
+                <p>A SMP with 12 star types, each giving distinct abilities. This is just a demonstration of my skills, this plugin is not for sale.</p>
+                <div class="modal-showcase-content">
+                    <div class="category-tabs">
+                        <button class="tab-btn active" data-category="overworld-starsmp">Overworld Stars</button>
+                        <button class="tab-btn" data-category="nether-starsmp">Nether Stars</button>
+                        <button class="tab-btn" data-category="end-starsmp">End Stars</button>
+                        <button class="tab-btn" data-category="more-starsmp">More</button>
+                    </div>
+                    <div class="category-content-container">
+                        <div class="category-content active" id="overworld-starsmp-content">
+            <!-- LIFE-STAR -->
+            <div class="star-card" data-star="life">
+                <div class="star-header">
+                    <div class="star-name-container">
+                        <img src="media/starsmp/staricons/life.png" alt="Life Star" class="star-icon">
+                        <h2>LIFE-STAR</h2>
+                    </div>
+                    <span class="star-type">Overworld - Haste 1</span>
                 </div>
-                <div class="footer-links">
-                    <a href="index.html">Home</a>
-                    <a href="showcase.html">Showcase</a>
-                    <a href="contact.html">Contact</a>
+                <div class="star-abilities">
+                    <div class="ability">
+                        <h3>Passive</h3>
+                        <p>You have a permanent 4 extra hearts</p>
+                    </div>
+                    <div class="ability">
+                        <h3>Ability: Life Drain</h3>
+                        <p>Gain half a heart per crit for 20 seconds after use (60s cooldown)</p>
+                    </div>
+                    <div class="ability">
+                        <h3>Ultimate: Total Restoration</h3>
+                        <p>Full heal and recover saturation for you and your trusted allies (120s cooldown)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ICE-STAR -->
+            <div class="star-card" data-star="ice">
+                <div class="star-header">
+                    <div class="star-name-container">
+                        <img src="media/starsmp/staricons/ice.png" alt="Ice Star" class="star-icon">
+                        <h2>ICE-STAR</h2>
+                    </div>
+                    <span class="star-type">Overworld - Haste 1</span>
+                </div>
+                <div class="star-content">
+                    <div class="star-abilities">
+                        <div class="ability">
+                            <h3>Passive</h3>
+                            <p>Speed 5 on ice + every 8 hits you have a 50% chance to apply slowness 4</p>
+                        </div>
+                        <div class="ability">
+                            <h3>Ability: Ice Ring</h3>
+                            <p>Creates an ice domain for 15 seconds made from blue ice and traps enemies inside (60s cooldown)</p>
+                        </div>
+                        <div class="ability">
+                            <h3>Ultimate: Sub Zero</h3>
+                            <p>Full stuns and holds enemies within ice for 10s (120s cooldown)</p>
+                        </div>
+                    </div>
+                    <div class="star-media">
+                        <div class="video-pair">
+                            <video controls>
+                                <source src="media/starsmp/IceStar.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <p>First-person view</p>
+                        </div>
+                        <div class="video-pair">
+                            <video controls>
+                                <source src="media/starsmp/IceStarReplay.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <p>Replay view</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- THUNDER-STAR -->
+            <div class="star-card" data-star="thunder">
+                <div class="star-header">
+                    <div class="star-name-container">
+                        <img src="media/starsmp/staricons/thunder.png" alt="Thunder Star" class="star-icon">
+                        <h2>THUNDER-STAR</h2>
+                    </div>
+                    <span class="star-type">Overworld - Haste 1</span>
+                </div>
+                <div class="star-abilities">
+                    <div class="ability">
+                        <h3>Passive</h3>
+                        <p>Permanent Speed 2 and a Thunderstike every 15 hits</p>
+                    </div>
+                    <div class="ability">
+                        <h3>Ability: Bolt</h3>
+                        <p>Shoot a Thunderbolt that disables stars for 30s (80s cooldown)</p>
+                    </div>
+                    <div class="ability">
+                        <h3>Ultimate: Guaranteed Strike</h3>
+                        <p>Strike Lightning on every hit and gain Speed IV for 8 Seconds (120s cooldown)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SOUND-STAR -->
+            <div class="star-card" data-star="sound">
+                <div class="star-header">
+                    <div class="star-name-container">
+                    <img src="media/starsmp/staricons/sound.png" alt="Sound Star" class="star-icon">
+                    <h2>SOUND-STAR</h2>
+                </div>
+                <span class="star-type">Overworld - Haste 1</span>
+                </div>
+                <div class="star-content">
+                    <div class="star-abilities">
+                        <div class="ability">
+                            <h3>Passive</h3>
+                            <p>Gives the Ultimate 2 forms, Shout Form and Scream Form (sneaking/standing)</p>
+                        </div>
+                        <div class="ability">
+                            <h3>Ability: Sword Sing</h3>
+                            <p>Movements with your sword become as fluid as with a whip for 10 seconds. Each successful hit increases cooldown of hit enemy by 10s</p>
+                        </div>
+                        <div class="ability">
+                            <h3>Ultimate</h3>
+                            <p><strong>Form 1 (Shout):</strong> AOE around you that flings people away (4 hearts damage)<br>
+                            <strong>Form 2 (Scream):</strong> Forward attack that increases cooldown of hit players by 15s (5.5 hearts damage)<br>
+                            (120s cooldown)</p>
+                        </div>
+                    </div>
+                    <div class="star-media">
+                        <div class="video-pair">
+                            <video controls>
+                                <source src="media/starsmp/SoundStar1.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <p>First-person view</p>
+                        </div>
+                        <div class="video-pair">
+                            <video controls>
+                                <source src="media/starsmp/SoundStar1Replay.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <p>Replay view</p>
+                        </div>
+                        <div class="video-pair">
+                            <video controls>
+                                <source src="media/starsmp/SoundStar2.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <p>Alternative ability</p>
+                        </div>
+                        <div class="video-pair">
+                            <video controls>
+                                <source src="media/starsmp/SoundStar2Replay.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <p>Replay view</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        </div>
+                        <div class="category-content" id="nether-starsmp-content">
+            <!-- FIRE-STAR -->
+            <div class="star-card" data-star="fire">
+                <div class="star-header">
+                    <div class="star-name-container">
+                        <img src="media/starsmp/staricons/fire.png" alt="Fire Star" class="star-icon">
+                        <h2>FIRE-STAR</h2>
+                    </div>
+                    <span class="star-type">Nether - Fire Res</span>
+                </div>
+                <div class="star-abilities">
+                    <div class="ability">
+                        <h3>Passive</h3>
+                        <p>Every 12 hits you have a 50% chance to set enemy on fire, you can use /togglefireglow to make enemies within a 6 block radius glow</p>
+                    </div>
+                    <div class="ability">
+                        <h3>Ability: Fireflies</h3>
+                        <p>Shoot out 6 fireflies that home on closest enemy for first 2 seconds, setting them on fire and dealing 1 heart on hit (80s cooldown)</p>
+                    </div>
+                    <div class="ability">
+                        <h3>Ultimate: Fireball</h3>
+                        <p>Shoot a fireball that deals 7 hearts of damage (120s cooldown)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- STRENGTH-STAR -->
+            <div class="star-card" data-star="strength">
+                <div class="star-header">
+                    <div class="star-name-container">
+                        <img src="media/starsmp/staricons/strength.png" alt="Strength Star" class="star-icon">
+                        <h2>STRENGTH-STAR</h2>
+                    </div>
+                    <span class="star-type">Nether - Fire Res</span>
+                </div>
+                <div class="star-abilities">
+                    <div class="ability">
+                        <h3>Passive</h3>
+                        <p>Strength 1</p>
+                    </div>
+                    <div class="ability">
+                        <h3>Ability: Rage</h3>
+                        <p>Lose 4 hearts for 30 seconds of Strength II (75s cooldown)</p>
+                    </div>
+                    <div class="ability">
+                        <h3>Ultimate: Revenge Counter</h3>
+                        <p>Charge the ultimate's damage by taking damage from players for first 10s, then deal all accumulated damage in one hit (120s cooldown)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WITHER-STAR -->
+            <div class="star-card" data-star="wither">
+                <div class="star-header">
+                    <div class="star-name-container">
+                        <img src="media/starsmp/staricons/wither.png" alt="Wither Star" class="star-icon">
+                        <h2>WITHER-STAR</h2>
+                    </div>
+                    <span class="star-type">Nether - Fire Res</span>
+                </div>
+                <div class="star-abilities">
+                    <div class="ability">
+                        <h3>Passive</h3>
+                        <p>Every 8 hits you have a 50% chance to apply Wither II to whoever you attack for 3s and gain 2 extra hearts for 10s</p>
+                    </div>
+                    <div class="ability">
+                        <h3>Ability: Decay</h3>
+                        <p>Takes 3 perm hearts from every player in 5 block radius for 40s and inflicts wither in AOE for 20s (75s cooldown)</p>
+                    </div>
+                    <div class="ability">
+                        <h3>Ultimate: Wither Head</h3>
+                        <p>Shoots 5 wither skeleton heads each dealing 2 hearts of damage and applying wither (120s cooldown)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GHOST-STAR -->
+            <div class="star-card" data-star="ghost">
+                <div class="star-header">
+                    <div class="star-name-container">
+                        <img src="media/starsmp/staricons/ghost.png" alt="Ghost Star" class="star-icon">
+                        <h2>GHOST-STAR</h2>
+                    </div>
+                    <span class="star-type">Nether - Fire Res</span>
+                </div>
+                <div class="star-abilities">
+                    <div class="ability">
+                        <h3>Passive</h3>
+                        <p>Every 10 hits 20% chance to take 0 damage</p>
+                    </div>
+                    <div class="ability">
+                        <h3>Ability: Haunt</h3>
+                        <p>The last hit player gets slowness and blindness, and also starts glowing in pulses for 15s (90s cooldown)</p>
+                    </div>
+                    <div class="ability">
+                        <h3>Ultimate: Ghost Form</h3>
+                        <p>Turn into a ghost for 20s - immunity to melee (not bows/fireballs/dash) and true invisibility (120s cooldown)</p>
+                    </div>
+                </div>
+            </div>
+                        </div>
+                        <div class="category-content" id="end-starsmp-content">
+            <!-- MATRIX-STAR -->
+            <div class="star-card" data-star="matrix">
+                <div class="star-header">
+                    <div class="star-name-container">
+                        <img src="media/starsmp/staricons/matrix.png" alt="Matrix Star" class="star-icon">
+                        <h2>MATRIX-STAR</h2>
+                    </div>
+                    <span class="star-type">End - Chorus Fruit Gaps</span>
+                </div>
+                <div class="star-abilities">
+                    <div class="ability">
+                        <h3>Passive</h3>
+                        <p>While on half health gain Resistance I</p>
+                    </div>
+                    <div class="ability">
+                        <h3>Ability: Disable</h3>
+                        <p>Disable wind charges for 8 seconds and stop all players movements (60s cooldown)</p>
+                    </div>
+                    <div class="ability">
+                        <h3>Ultimate: Screen Glitch</h3>
+                        <p>For 10s all enemies in 3 block AOE have their screen glitched and the user gains Haste X (120s cooldown)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VOID-STAR -->
+            <div class="star-card" data-star="void">
+                <div class="star-header">
+                    <div class="star-name-container">
+                        <img src="media/starsmp/staricons/void.png" alt="Void Star" class="star-icon">
+                        <h2>VOID-STAR</h2>
+                    </div>
+                    <span class="star-type">End - Chorus Fruit Gaps</span>
+                </div>
+                <div class="star-abilities">
+                    <div class="ability">
+                        <h3>Passive</h3>
+                        <p>You are unable to fall into the void, being pushed up from it. You also have toggelable invisibility via /togglevoidinvis</p>
+                    </div>
+                    <div class="ability">
+                        <h3>Ability: Chain</h3>
+                        <p>Chain enemies to ground and poison them for 15s (75s cooldown)</p>
+                    </div>
+                    <div class="ability">
+                        <h3>Ultimate: Binding Void</h3>
+                        <p>Chains enemies to you and blinds them (15s), blacks out their hearts for 25s (120s cooldown)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AIR-STAR -->
+            <div class="star-card" data-star="air">
+                <div class="star-header">
+                    <div class="star-name-container">
+                        <img src="media/starsmp/staricons/air.png" alt="Air Star" class="star-icon">
+                        <h2>AIR-STAR</h2>
+                    </div>
+                    <span class="star-type">End - Chorus Fruit Gaps</span>
+                </div>
+                <div class="star-abilities">
+                    <div class="ability">
+                        <h3>Passive</h3>
+                        <p>No fall damage<br>
+                        Ability to double jump</p>
+                    </div>
+                    <div class="ability">
+                        <h3>Ability: Tornado</h3>
+                        <p>Suck in every player in 15 block radius and spit them out (60s cooldown)</p>
+                    </div>
+                    <div class="ability">
+                        <h3>Ultimate: Dash</h3>
+                        <p>Dash forward dealing 2.5 hearts to anybody in your trajectory, hiding hearts briefly and applying poison (60s cooldown)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PURPLE-STAR -->
+            <div class="star-card" data-star="purple">
+                <div class="star-header">
+                    <div class="star-name-container">
+                        <img src="media/starsmp/staricons/purple.png" alt="Purple Star" class="star-icon">
+                        <h2>PURPLE-STAR</h2>
+                    </div>
+                    <span class="star-type">End - Chorus Fruit Gaps</span>
+                </div>
+                <div class="star-abilities">
+                    <div class="ability">
+                        <h3>Passive</h3>
+                        <p>Every 15 hits 50% chance to deal 1.5x damage</p>
+                    </div>
+                    <div class="ability">
+                        <h3>Ability: Marked for Death</h3>
+                        <p>Marks 1 enemy in 20 block range for death (Shadow Step multiplier increases to 2.5x) (80s cooldown)</p>
+                    </div>
+                    <div class="ability">
+                        <h3>Ultimate: Shadow Step</h3>
+                        <p>Teleport behind enemy in 20 block radius, next hit deals 2x damage (120s cooldown)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="star-card" data-star="draconic">
+                <div class="star-header">
+                    <div class="star-name-container">
+                        <img src="media/starsmp/staricons/draconic.png" alt="Draconic Star" class="star-icon">
+                        <h2>DRACONIC-STAR</h2>
+                    </div>
+                    <span class="star-type">End - Dragon's Breath</span>
+                </div>
+                <div class="star-abilities">
+                    <div class="ability">
+                        <h3>Passive</h3>
+                        <p>Can consume Dragon's Breath to gain 4 extra hearts for 2 minutes (max 8 extra hearts, only 16 bottles allowed)</p>
+                    </div>
+                    <div class="ability">
+                        <h3>Ability 1: Draconic Fling</h3>
+                        <p>Flings everyone in a 5 block radius away (60s cooldown)</p>
+                    </div>
+                    <div class="ability">
+                        <h3>Ability 2: Draconic Blink</h3>
+                        <p>Teleports you wherever you look, grants Resistance I and Strength II for 15s (45s cooldown)</p>
+                    </div>
+                    <div class="ability">
+                        <h3>Ultimate: Draconic Meteor</h3>
+                        <p>Summons a meteor that forms a dragon's breath cloud upon landing</p>
+                    </div>
+                </div>
+            </div>
+                        </div>
+                        <div class="category-content" id="more-starsmp-content">
+            <!-- Falling Star Ritual -->
+            <div class="star-card">
+                <div class="star-header">
+                    <h2>Falling Star Ritual</h2>
+                </div>
+                <div class="star-content">
+                    <div class="star-abilities">
+                        <div class="ability">
+                            <h3>How the Ritual Works</h3>
+                            <p><strong>1. Starting the Ritual</strong><br>
+                            - Drop a special star item near the Falling Star Lodestone (within 3 blocks)<br>
+                            - The star will begin orbiting the pillar<br>
+                            - A 20-minute countdown starts</p>
+
+                            <p><strong>2. During the Ritual</strong><br>
+                            - A boss bar appears for all players showing time remaining<br>
+                            - The server broadcasts the ritual coords every 5 minutes</p>
+
+                            <p><strong>3. Completion</strong><br>
+                            - After 20 minutes, the star transforms into a "Fused" version<br>
+                            - The star drops at the location of the Lodestone<br>
+                            - Each type of star can only be fused once</p>
+                        </div>
+                    </div>
+                    <div class="star-media">
+                        <div class="video-pair">
+                            <video controls>
+                                <source src="media/starsmp/FallingStar.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <p>First-person view</p>
+                        </div>
+                        <div class="video-pair">
+                            <video controls>
+                                <source src="media/starsmp/FallingStarReplay.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <p>Replay view</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Star Crafter -->
+            <div class="star-card">
+                <div class="star-header">
+                    <h2>Star Crafter</h2>
+                </div>
+                <div class="star-content">
+                    <div class="star-abilities">
+                        <div class="ability">
+                            <h3>Obtaining the Star Crafter</h3>
+                            <p>- Functions as the crafting table for stars<br>
+                            - Right-click a Lodestone (after unlocking the recipe) to open the crafting menu</p>
+
+                            <h3>Recipes Command</h3>
+                            <p>Use <code>/crafting</code> to view all star recipes in-game<br>
+                            This shows exact recipes and any recent changes</p>
+                        </div>
+                    </div>
+                    <div class="star-media">
+                        <div class="image-pair">
+                            <img src="media/starsmp/StarCrafterRecipe.png" alt="Star Crafter Recipe">
+                            <p>Star Crafter Recipe</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trust System -->
+            <div class="star-card">
+                <div class="star-header">
+                    <h2>Trust System</h2>
+                </div>
+                <div class="star-abilities">
+                    <div class="ability">
+                        <h3>How Trust Works</h3>
+                        <p>- Use <code>/trust [player]</code> to add players to your trust list<br>
+                        - Use <code>/untrust [player]</code> to remove them<br>
+                        - Trusted players cannot be harmed by your star abilities</p>
+
+                        <h3>Key Features</h3>
+                        <p>- Prevents accidental team damage<br>
+                        - Works across all star types<br>
+                        - Trust list persists between logins<br>
+                        - Admin commands available for testing</p>
+
+                        <h3>Technical Details</h3>
+                        <p>- Trust data is saved in trust_data.yml<br>
+                        - Player names are cached for offline viewing<br>
+                        - Automatic data saving every 15 minutes</p>
+                    </div>
+                </div>
+            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </footer>
-    <script src="js/main.js"></script>
+
+        <!-- Astralites Modal -->
+        <div id="astralites-details" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>Astralites</h2>
+                <p>A hardcore survival experience with a unique twist. This is just a demonstation of my skills, this plugin is not for sale.</p>
+                <div class="modal-showcase-content">
+                    <div class="category-content-container">
+                        <div class="category-content active">
+            <!-- SUPERNOVA STAR -->
+            <div class="star-card" data-star="supernova">
+                <div class="star-header">
+                    <div class="star-name-container">
+                        <h2>SUPERNOVA STAR</h2>
+                    </div>
+                </div>
+                <div class="star-content">
+                    <div class="star-abilities">
+                        <div class="ability">
+                            <p>Become the heart of a dying star. You are a walking cataclysm, capable of unleashing one of the most destructive forces in the universe. But wield this power with caution, for its magnitude is matched only by its danger.</p>
+                            <h3>Ability: Cataclysmic Detonation</h3>
+                            <p>After a 5-second charge, you explode in a massive 15-block radius, dealing catastrophic damage (8-10 hearts) to all nearby entities.</p>
+                            <h3>Death Trigger</h3>
+                            <p>If you are killed while charging, your body becomes a martyr's bomb, triggering the supernova upon death.</p>
+                            <h3>Cooldown</h3>
+                            <p>This ultimate power can only be used once every 5 Minecraft days.</p>
+                        </div>
+                    </div>
+                    <div class="star-media">
+                        <div class="video-pair">
+                            <video controls>
+                                <source src="media/astralitessmp/SupernovaReplay.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <p>Replay view</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- METEOR STAR -->
+            <div class="star-card" data-star="meteor">
+                <div class="star-header">
+                    <div class="star-name-container">
+                        <h2>METEOR STAR</h2>
+                    </div>
+                </div>
+                 <div class="star-content">
+                    <div class="star-abilities">
+                        <div class="ability">
+                            <p>Call down the heavens' wrath. Command a volley of celestial rocks to bombard your enemies from above, turning the battlefield into a cratered wasteland.</p>
+                            <h3>Ability: Meteor Shower</h3>
+                            <p>Summons 3-5 small meteors that crash down randomly in a 10-block radius around your target.</p>
+                            <h3>Impact</h3>
+                            <p>Each meteor deals 2.5 hearts on direct hit and explodes with the force of a small creeper blast, potentially setting the ground ablaze.</p>
+                            <h3>Cooldown</h3>
+                            <p>50 seconds.</p>
+                        </div>
+                    </div>
+                    <div class="star-media">
+                        <div class="video-pair">
+                            <video controls>
+                                <source src="media/astralitessmp/MeteorReplay.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <p>Replay view</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FREEZE STAR -->
+            <div class="star-card" data-star="freeze">
+                <div class="star-header">
+                    <div class="star-name-container">
+                        <h2>FREEZE STAR</h2>
+                    </div>
+                </div>
+                 <div class="star-content">
+                    <div class="star-abilities">
+                        <div class="ability">
+                            <p>Stop your enemy in the river of time. Isolate a single foe, locking them in a timeless prison. They are safe from harm while frozen, but once time resumes, the entirety of their deferred fate is dealt at once.</p>
+                            <h3>Ability: Time Lock</h3>
+                            <p>Target an enemy within 15 blocks, freezing them for 5 seconds. The target is invulnerable but cannot move or act. All damage they would have taken is queued and applied instantly when the effect ends.</p>
+                            <h3>Cooldown</h3>
+                            <p>15 seconds.</p>
+                        </div>
+                    </div>
+                    <div class="star-media">
+                        <div class="video-pair">
+                            <video controls>
+                                <source src="media/astralitessmp/FreezeReplay.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <p>Replay view</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CRUSH STAR -->
+            <div class="star-card" data-star="crush">
+                <div class="star-header">
+                    <div class="star-name-container">
+                        <h2>CRUSH STAR</h2>
+                    </div>
+                </div>
+                <div class="star-content">
+                    <div class="star-abilities">
+                        <div class="ability">
+                            <p>Dominate your personal space with gravitational force. First, you pull all nearby foes into your grasp, then you violently expel them, using gravity as both a net and a hammer.</p>
+                            <h3>Ability: Pull and Repel</h3>
+                            <p>A two-step ability. First, all enemies within a 12-block radius are dragged towards you for 2 seconds. This is immediately followed by a violent knockback, launching them 8 blocks away and inflicting 2 hearts of fall damage.</p>
+                            <h3>Cooldown</h3>
+                            <p>50 seconds.</p>
+                        </div>
+                    </div>
+                    <div class="star-media">
+                        <div class="video-pair">
+                            <video controls>
+                                <source src="media/astralitessmp/CrushReplay.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <p>Replay view</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CHAOS STAR -->
+            <div class="star-card" data-star="chaos">
+                <div class="star-header">
+                    <div class="star-name-container">
+                        <h2>CHAOS STAR</h2>
+                    </div>
+                </div>
+                <div class="star-content">
+                    <div class="star-abilities">
+                        <div class="ability">
+                            <p>Embrace total randomness. Be the agent of cosmic uncertainty. Each activation is a gamble. Will you shower the world with riches, summon a powerful ally, or unleash a terrible monster upon yourself and your enemies?</p>
+                            <h3>Ability: Roll the Dice</h3>
+                            <p>When activated, a random event occurs:</p>
+                            <ul>
+                                <li>30% Chance: Spawn random valuable loot.</li>
+                                <li>30% Chance: Summon random hostile or friendly mobs.</li>
+                                <li>20% Chance: Apply random potion effects to everyone nearby.</li>
+                                <li>15% Chance: Create a dangerous anomaly, like a TNT explosion or lightning strike.</li>
+                                <li>5% Chance: Spawn a Warden.</li>
+                            </ul>
+                            <h3>Cooldown</h3>
+                            <p>60 seconds.</p>
+                        </div>
+                    </div>
+                    <div class="star-media">
+                        <div class="video-pair">
+                            <video controls>
+                                <source src="media/astralitessmp/ChaosReplay.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <p>Replay view</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LIFELEECH STAR -->
+            <div class="star-card" data-star="lifeleech">
+                <div class="star-header">
+                    <div class="star-name-container">
+                        <h2>LIFELEECH STAR</h2>
+                    </div>
+                </div>
+                <div class="star-content">
+                    <div class="star-abilities">
+                        <div class="ability">
+                            <p>Become a vampiric warrior, sustained by the vitality of your foes. This power allows you to drain health with every blow, but such dark magic constantly saps your own energy.</p>
+                            <h3>Ability: Vampiric Strikes</h3>
+                            <p>For 12 seconds, every melee hit you land steals 1.5 hearts from your enemy and heals you for the same amount.</p>
+                            <h3>Downside</h3>
+                            <p>While active, your hunger drains rapidly (1 bar every 4 seconds).</p>
+                            <h3>Cooldown</h3>
+                            <p>70 seconds.</p>
+                        </div>
+                    </div>
+                    <div class="star-media">
+                        <div class="video-pair">
+                            <video controls>
+                                <source src="media/astralitessmp/LifeLeechStar.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <p>Replay view</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RAGNAROK STAR -->
+            <div class="star-card" data-star="ragnarok">
+                <div class="star-header">
+                    <div class="star-name-container">
+                        <h2>RAGNAROK STAR</h2>
+                    </div>
+                </div>
+                <div class="star-abilities">
+                    <div class="ability">
+                        <p>Unleash the end of days. For a brief, terrifying period, you become a harbinger of the apocalypse, tearing the world apart around you. This power comes at a great personal cost, chipping away at your very life force with each use.</p>
+                        <h3>Ability: The Final Hour</h3>
+                        <p>For 10 seconds, you summon a storm of destruction. Random lightning strikes and chaotic explosions erupt in a 12-block radius around you.</p>
+                        <h3>Ultimate Sacrifice</h3>
+                        <p>Each use of this ability permanently removes 1 heart from your maximum health.</p>
+                        <h3>Cooldown</h3>
+                        <p>Can be used once every 2 Minecraft days.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BURN STAR -->
+            <div class="star-card" data-star="burn">
+                <div class="star-header">
+                    <div class="star-name-container">
+                        <h2>BURN STAR</h2>
+                    </div>
+                </div>
+                <div class="star-abilities">
+                    <div class="ability">
+                        <p>Embody the eternal flame. You are a living inferno. Summon a searing explosion and walk through fire as if it were air, your power waxing in the light of the sun.</p>
+                        <h3>Ability: Fire Nova</h3>
+                        <p>Unleash a fiery explosion in a 6-block radius, dealing 3-4 hearts of damage and setting everything ablaze with a Fire Aspect II burn.</p>
+                        <h3>User Buffs</h3>
+                        <p>For 10 seconds after activation, you are immune to fire and lava. Additionally, you deal 20% increased melee damage while in direct daylight.</p>
+                        <h3>Cooldown</h3>
+                        <p>45 seconds.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SUNLIGHT STAR -->
+            <div class="star-card" data-star="sunlight">
+                <div class="star-header">
+                    <div class="star-name-container">
+                        <h2>SUNLIGHT STAR</h2>
+                    </div>
+                </div>
+                <div class="star-abilities">
+                    <div class="ability">
+                        <p>Wield a beam of pure solar energy. Fire a concentrated laser of sunlight that pierces through your foes, leaving them scorched and blinded by your brilliance.</p>
+                        <h3>Ability: Solar Beam</h3>
+                        <p>Fires a 20-block laser that pierces up to three enemies, dealing a massive 6 hearts of damage and inflicting Blindness for 30 seconds.</p>
+                        <h3>Sunlight Affinity</h3>
+                        <p>The ability's cooldown charges 50% faster when you are standing in direct sunlight.</p>
+                        <h3>Cooldown</h3>
+                        <p>40 seconds.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- STAR WARDEN -->
+            <div class="star-card" data-star="starwarden">
+                <div class="star-header">
+                    <div class="star-name-container">
+                        <h2>STAR WARDEN</h2>
+                    </div>
+                </div>
+                <div class="star-abilities">
+                    <div class="ability">
+                        <p>Command the irresistible pull of a black hole. You bend gravity to your will, creating a singularity that traps your enemies and tears them apart.</p>
+                        <h3>Ability: Event Horizon</h3>
+                        <p>For 15 seconds, create a black hole that pulls in mobs, players, projectiles, and items within a 30-block radius. Anything caught in the epicenter takes a devastating 10 hearts of damage per second.</p>
+                        <h3>User Buffs</h3>
+                        <p>You take 75% less fall damage, but your own gravitational pull causes you to fall 25% faster.</p>
+                        <h3>Cooldown</h3>
+                        <p>60 seconds.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NEBULA STAR -->
+            <div class="star-card" data-star="nebula">
+                <div class="star-header">
+                    <div class="star-name-container">
+                        <h2>NEBULA STAR</h2>
+                    </div>
+                </div>
+                <div class="star-abilities">
+                    <div class="ability">
+                        <p>Become a living storm of cosmic dust. Shroud yourself in a swirling nebula that confounds and withers your enemies, making you a fortress against projectiles.</p>
+                        <h3>Ability: Ender's Mist</h3>
+                        <p>For 12 seconds, you are surrounded by a 7-block wide fog. Enemies inside are afflicted with Slowness II, Blindness, and Wither I. All enemy projectiles that enter the mist are nullified.</p>
+                        <h3>Downside</h3>
+                        <p>Your movement speed is reduced by 20% while the nebula is active.</p>
+                        <h3>Cooldown</h3>
+                        <p>45 seconds.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SOLAR STAR -->
+            <div class="star-card" data-star="solar">
+                <div class="star-header">
+                    <div class="star-name-container">
+                        <h2>SOLAR STAR</h2>
+                    </div>
+                </div>
+                <div class="star-abilities">
+                    <div class="ability">
+                        <p>Unleash a blinding flash of stellar light. A close-range defensive burst, perfect for disorienting aggressive enemies and creating an opportunity to escape or counter-attack.</p>
+                        <h3>Ability: Solar Flare</h3>
+                        <p>Erupt with a flash of light in a 6-block radius. It deals 1 heart of damage but inflicts nearby enemies with Blindness (5s) and Nausea (4s).</p>
+                        <h3>Cooldown</h3>
+                        <p>30 seconds.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SKY STAR -->
+            <div class="star-card" data-star="sky">
+                <div class="star-header">
+                    <div class="star-name-container">
+                        <h2>SKY STAR</h2>
+                    </div>
+                </div>
+                <div class="star-abilities">
+                    <div class="ability">
+                        <p>Defy gravity only to come crashing down with immense force. Use the sky as your perch before slamming into the ground, sending a shockwave that devastates your foes.</p>
+                        <h3>Ability: Celestial Slam</h3>
+                        <p>Launch yourself 15 blocks into the air. Upon landing, you create a 6-block shockwave that deals 4-6 hearts of damage and knocks back all nearby enemies by 5 blocks.</p>
+                        <h3>Cooldown</h3>
+                        <p>35 seconds.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PACT STAR -->
+            <div class="star-card" data-star="pact">
+                <div class="star-header">
+                    <div class="star-name-container">
+                        <h2>PACT STAR</h2>
+                    </div>
+                </div>
+                <div class="star-abilities">
+                    <div class="ability">
+                        <p>Make a blood pact for overwhelming power. Sacrifice your own life force for a brief window of godlike damage. Your only path to recovery is through victory.</p>
+                        <h3>Ability: Blood for Power</h3>
+                        <p>Instantly sacrifice 3 of your hearts to deal double damage for 10 seconds.</p>
+                        <h3>Reaping Clause</h3>
+                        <p>If you kill a player while the buff is active, your sacrificed hearts are immediately restored.</p>
+                        <h3>Cooldown</h3>
+                        <p>65 seconds.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MIRROR STAR -->
+            <div class="star-card" data-star="mirror">
+                <div class="star-header">
+                    <div class="star-name-container">
+                        <h2>MIRROR STAR</h2>
+                    </div>
+                </div>
+                <div class="star-abilities">
+                    <div class="ability">
+                        <p>Turn your enemy's strength against them. For a short duration, you become a reflective shield. A portion of all damage you take is instantly sent back to its source, with a chance to punish them even harder.</p>
+                        <h3>Ability: Damage Reversal</h3>
+                        <p>For 5 seconds, 50% of all incoming damage is reflected back to the attacker. There is a 20% chance that the reflected damage is doubled.</p>
+                        <h3>Cooldown</h3>
+                        <p>55 seconds.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GRIMOIRE STAR -->
+            <div class="star-card" data-star="grimoire">
+                <div class="star-header">
+                    <div class="star-name-container">
+                        <h2>GRIMOIRE STAR</h2>
+                    </div>
+                </div>
+                <div class="star-abilities">
+                    <div class="ability">
+                        <p>Wield a cursed book of unpredictable magic. You attempt to cast debilitating curses on your foes, but the Grimoire is fickle. There's an equal chance its chaotic magic will empower them instead.</p>
+                        <h3>Ability: Unstable Hex</h3>
+                        <p>Affects all enemies in an 8-block radius with random potion effects. There is a 50% chance the effects are harmful (e.g., Poison II, Slowness) and a 50% chance they are beneficial (e.g., Strength, Speed).</p>
+                        <h3>Cooldown</h3>
+                        <p>40 seconds.</p>
+                    </div>
+                </div>
+            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Spark SMP Modal -->
+        <div id="sparksmp-details" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>Spark SMP</h2>
+                <p>A custom Paper 1.21.1 plugin designed to introduce a set of magical artifacts called Sparks into an SMP environment.</p>
+                <div class="modal-showcase-content">
+                    <div class="category-content-container">
+                        <div class="category-content active">
+                            <!-- Dune Spark -->
+                            <div class="star-card" data-star="dune">
+                                <div class="star-header">
+                                    <div class="star-name-container">
+                                        <img src="media/sparksmp/sparkicons/dune.png" alt="Dune Spark" class="star-icon">
+                                        <h2>Dune Spark</h2>
+                                    </div>
+                                </div>
+                                <div class="star-content">
+                                    <div class="star-abilities">
+                                        <div class="ability">
+                                            <h3>Ability (Right-Click)</h3>
+                                            <p>Dash 20 blocks. (20s Cooldown)</p>
+                                        </div>
+                                        <div class="ability">
+                                            <h3>Passive</h3>
+                                            <p>Permanent Speed I effect.</p>
+                                        </div>
+                                    </div>
+                                    <div class="star-media">
+                                        <div class="video-pair">
+                                            <video controls>
+                                                <source src="media/sparksmp/DuneReplay.mp4" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video>
+                                            <p>Replay view</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Breeze Spark -->
+                            <div class="star-card" data-star="breeze">
+                                <div class="star-header">
+                                    <div class="star-name-container">
+                                        <img src="media/sparksmp/sparkicons/breeze.png" alt="Breeze Spark" class="star-icon">
+                                        <h2>Breeze Spark</h2>
+                                    </div>
+                                </div>
+                                <div class="star-abilities">
+                                    <div class="ability">
+                                        <h3>Ability (Right-Click)</h3>
+                                        <p>Pulls players within 20 blocks towards you. (45s Cooldown)</p>
+                                    </div>
+                                    <div class="ability">
+                                        <h3>Passive</h3>
+                                        <p>No fall damage & double jump.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Darkness Spark -->
+                            <div class="star-card" data-star="darkness">
+                                <div class="star-header">
+                                    <div class="star-name-container">
+                                        <img src="media/sparksmp/sparkicons/darkness.png" alt="Darkness Spark" class="star-icon">
+                                        <h2>Darkness Spark</h2>
+                                    </div>
+                                </div>
+                                <div class="star-content">
+                                    <div class="star-abilities">
+                                        <div class="ability">
+                                            <h3>Ability (Right-Click)</h3>
+                                            <p>Pushes players away and applies Darkness & Slowness III for 15s. (45s Cooldown)</p>
+                                        </div>
+                                        <div class="ability">
+                                            <h3>Passive</h3>
+                                            <p>Immune to Wardens, and the Darkness & Blindness effects.</p>
+                                        </div>
+                                    </div>
+                                    <div class="star-media">
+                                        <div class="video-pair">
+                                            <video controls>
+                                                <source src="media/sparksmp/DarknessReplay.mp4" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video>
+                                            <p>Replay view</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Emerald Spark -->
+                            <div class="star-card" data-star="emerald">
+                                <div class="star-header">
+                                    <div class="star-name-container">
+                                        <img src="media/sparksmp/sparkicons/emerald.png" alt="Emerald Spark" class="star-icon">
+                                        <h2>Emerald Spark</h2>
+                                    </div>
+                                </div>
+                                <div class="star-content">
+                                    <div class="star-abilities">
+                                        <div class="ability">
+                                            <h3>Ability (Right-Click)</h3>
+                                            <p>Grants Hero of the Village 255 for 5 minutes. (2m Cooldown)</p>
+                                        </div>
+                                        <div class="ability">
+                                            <h3>Passive</h3>
+                                            <p>Iron Golems will not attack you.</p>
+                                        </div>
+                                    </div>
+                                    <div class="star-media">
+                                        <div class="video-pair">
+                                            <video controls>
+                                                <source src="media/sparksmp/EmeraldReplay.mp4" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video>
+                                            <p>Replay view</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Haste Spark -->
+                            <div class="star-card" data-star="haste">
+                                <div class="star-header">
+                                    <div class="star-name-container">
+                                        <img src="media/sparksmp/sparkicons/haste.png" alt="Haste Spark" class="star-icon">
+                                        <h2>Haste Spark</h2>
+                                    </div>
+                                </div>
+                                <div class="star-content">
+                                    <div class="star-abilities">
+                                        <div class="ability">
+                                            <h3>Ability (Right-Click)</h3>
+                                            <p>Grants Haste III for 25s. (50s Cooldown)</p>
+                                        </div>
+                                        <div class="ability">
+                                            <h3>Passive</h3>
+                                            <p>Permanent Haste I effect.</p>
+                                        </div>
+                                    </div>
+                                    <div class="star-media">
+                                        <div class="video-pair">
+                                            <video controls>
+                                                <source src="media/sparksmp/HasteReplay.mp4" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video>
+                                            <p>Replay view</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Invisibility Spark -->
+                            <div class="star-card" data-star="invisibility">
+                                <div class="star-header">
+                                    <div class="star-name-container">
+                                        <img src="media/sparksmp/sparkicons/invisibility.png" alt="Invisibility Spark" class="star-icon">
+                                        <h2>Invisibility Spark</h2>
+                                    </div>
+                                </div>
+                                <div class="star-abilities">
+                                    <div class="ability">
+                                        <h3>Ability (Right-Click)</h3>
+                                        <p>Grants Invisibility for 10s. (30s Cooldown)</p>
+                                    </div>
+                                    <div class="ability">
+                                        <h3>Passive</h3>
+                                        <p>Hostile mobs ignore you and permanant Invisibility effect.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Strength Spark -->
+                            <div class="star-card" data-star="strength">
+                                <div class="star-header">
+                                    <div class="star-name-container">
+                                        <img src="media/sparksmp/sparkicons/strength.png" alt="Strength Spark" class="star-icon">
+                                        <h2>Strength Spark</h2>
+                                    </div>
+                                </div>
+                                <div class="star-content">
+                                    <div class="star-abilities">
+                                        <div class="ability">
+                                            <h3>Ability (Right-Click)</h3>
+                                            <p>Grants Strength I for 30s. (45s Cooldown)</p>
+                                        </div>
+                                        <div class="ability">
+                                            <h3>Passive</h3>
+                                            <p>Permanent Strength I effect.</p>
+                                        </div>
+                                    </div>
+                                    <div class="star-media">
+                                        <div class="video-pair">
+                                            <video controls>
+                                                <source src="media/sparksmp/StrengthReplay.mp4" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video>
+                                            <p>Replay view</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Dragon Spark -->
+                            <div class="star-card" data-star="dragon">
+                                <div class="star-header">
+                                    <div class="star-name-container">
+                                        <img src="media/sparksmp/sparkicons/dragon.png" alt="Dragon Spark" class="star-icon">
+                                        <h2>Dragon Spark (Unique)</h2>
+                                    </div>
+                                </div>
+                                <div class="star-abilities">
+                                    <div class="ability">
+                                        <h3>Ability 1 (Right-Click)</h3>
+                                        <p>Flings enemies in a 10-block radius into the air and slams them down. (30s Cooldown)</p>
+                                    </div>
+                                    <div class="ability">
+                                        <h3>Ability 2 (Left-Click)</h3>
+                                        <p>Launches a Dragon Fireball that deals 5 hearts of damage. (1m Cooldown)</p>
+                                    </div>
+                                    <div class="ability">
+                                        <h3>Passive</h3>
+                                        <p>Endermen will not attack you & grants you a total of 20 hearts (40 HP).</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/particles.js"></script>
+    <script src="js/new-main.js"></script>
 </body>
 </html>
