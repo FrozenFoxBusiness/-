@@ -39,16 +39,6 @@
     color: var(--accent);
 }
 
-.hero-ice-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 150px;
-    background: url('../media/branding/ice-overlay.png') repeat-x bottom center;
-    background-size: contain;
-    opacity: 0.6;
-}
 
 /* Plugins Section */
 .plugins-section {
@@ -198,21 +188,6 @@
     cursor: not-allowed;
 }
 
-.card-ice-edge {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background: linear-gradient(90deg, var(--primary), var(--accent));
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.4s ease;
-}
-
-.plugin-card:hover .card-ice-edge {
-    transform: scaleX(1);
-}
 
 /* Coming Soon Card */
 .coming-soon {
@@ -236,28 +211,6 @@
     font-size: 1.2rem;
 }
 
-.snowflakes {
-    display: flex;
-    margin-top: 10px;
-    opacity: 0.8;
-}
-
-.snowflake {
-    margin: 0 5px;
-    animation: float 3s ease-in-out infinite;
-}
-
-.snowflake:nth-child(1) {
-    animation-delay: 0s;
-}
-
-.snowflake:nth-child(2) {
-    animation-delay: 1s;
-}
-
-.snowflake:nth-child(3) {
-    animation-delay: 2s;
-}
 
 .cta-section {
     padding: 80px 0;
@@ -394,6 +347,63 @@
     100% {
         transform: rotate(360deg);
     }
+}
+
+body.light-mode .showcase-hero {
+    background: var(--dark);
+}
+
+body.light-mode .hero-content h1 {
+    color: var(--primary);
+    background: none;
+    -webkit-background-clip: unset;
+    background-clip: unset;
+    text-shadow: none;
+}
+
+body.light-mode .hero-content p,
+body.light-mode .section-subtitle,
+body.light-mode .plugin-description {
+    color: var(--text);
+}
+
+body.light-mode .plugin-card {
+    background: var(--light);
+    border: 1px solid #dee2e6;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+body.light-mode .plugin-icon {
+    background: rgba(0, 123, 255, 0.1);
+    border: 1px solid rgba(0, 123, 255, 0.2);
+}
+
+body.light-mode .feature-tag {
+    background: rgba(0, 123, 255, 0.1);
+    color: var(--primary);
+}
+
+body.light-mode .plugin-link {
+    background: rgba(0, 123, 255, 0.1);
+    color: var(--primary);
+}
+
+body.light-mode .plugin-link:hover {
+    background: var(--primary);
+    color: var(--light);
+}
+
+body.light-mode .cta-card {
+    background: var(--light);
+    border: 1px solid #dee2e6;
+}
+
+body.light-mode .cta-card::before {
+    display: none;
+}
+
+body.light-mode .plugin-content h3 {
+    color: var(--primary);
 }
 
 @media (max-width: 768px) {

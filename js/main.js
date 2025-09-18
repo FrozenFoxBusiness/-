@@ -80,3 +80,33 @@ function triggerSpookyEffect() {
     logoContainer.classList.remove('easter-egg-active');
   }, 5000);
 }
+
+// Theme switcher logic
+const themeToggle = document.getElementById('theme-toggle');
+const body = document.body;
+
+function applyTheme(theme) {
+    if (theme === 'light') {
+        body.classList.add('light-mode');
+        if (themeToggle) themeToggle.checked = true;
+    } else {
+        body.classList.remove('light-mode');
+        if (themeToggle) themeToggle.checked = false;
+    }
+}
+
+if (themeToggle) {
+    themeToggle.addEventListener('change', () => {
+        if (themeToggle.checked) {
+            localStorage.setItem('theme', 'light');
+            applyTheme('light');
+        } else {
+            localStorage.setItem('theme', 'dark');
+            applyTheme('dark');
+        }
+    });
+}
+
+// Apply saved theme on page load
+const savedTheme = localStorage.getItem('theme') || 'dark';
+applyTheme(savedTheme);
