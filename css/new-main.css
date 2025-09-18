@@ -52,6 +52,11 @@ header .container {
 .branding {
     display: flex;
     align-items: center;
+    transition: all 0.3s ease;
+}
+
+.branding:hover {
+    transform: scale(1.05);
 }
 
 .branding .logo {
@@ -86,11 +91,13 @@ nav a {
     text-decoration: none;
     font-size: 16px;
     font-weight: 400;
-    transition: color 0.3s;
+    transition: all 0.3s ease;
+    display: inline-block;
 }
 
 nav a:hover {
     color: var(--accent-color);
+    transform: scale(1.1);
 }
 
 /* Hero Section */
@@ -131,17 +138,22 @@ nav a:hover {
 }
 
 .btn {
-    background-color: var(--accent-color);
+    background-image: linear-gradient(45deg, var(--accent-color), #007bff);
+    background-size: 200% auto;
     color: #fff;
     padding: 15px 30px;
-    border-radius: 5px;
+    border: none;
+    border-radius: 8px;
     text-decoration: none;
     font-weight: 700;
-    transition: background-color 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.2);
+    transition: all 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #008ad6;
+    background-position: right center;
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
 }
 
 /* Theme Toggle Button */
@@ -201,24 +213,33 @@ h2 {
 .showcase-filters {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-bottom: 40px;
+    gap: 15px;
 }
 
 .filter-btn {
-    background: none;
-    border: 1px solid var(--accent-color);
-    color: var(--accent-color);
-    padding: 10px 20px;
-    margin: 0 10px;
-    border-radius: 5px;
+    background-color: var(--card-bg-color);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    padding: 12px 25px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+    font-weight: 700;
+    transition: all 0.3s ease;
 }
 
-.filter-btn.active,
 .filter-btn:hover {
+    transform: translateY(-3px);
     background-color: var(--accent-color);
     color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+}
+
+.filter-btn.active {
+    background-color: var(--accent-color);
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
 }
 
 .showcase-grid {
@@ -233,6 +254,12 @@ h2 {
     border-radius: 10px;
     border: 1px solid var(--border-color);
     text-align: center;
+    transition: all 0.3s ease;
+}
+
+.plugin-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .plugin-card-header {
@@ -276,6 +303,12 @@ h2 {
     padding: 30px;
     border-radius: 10px;
     border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .contact-card h3 {
@@ -336,6 +369,31 @@ footer {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
+    gap: 15px;
+}
+
+.modal-showcase-content .tab-btn {
+    background-color: var(--card-bg-color);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.modal-showcase-content .tab-btn:hover {
+    transform: translateY(-3px);
+    background-color: var(--accent-color);
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+}
+
+.modal-showcase-content .tab-btn.active {
+    background-color: var(--accent-color);
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
 }
 
 .modal-showcase-content .star-card {
