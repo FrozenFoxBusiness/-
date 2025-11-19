@@ -121,13 +121,14 @@ nav a:hover {
 .hero .container {
     position: relative;
     z-index: 2;
+    transform: translateY(-50px);
 }
 
 .hero h1 {
     font-family: 'Young Serif', sans-serif;
     font-size: 64px;
     font-weight: 700;
-    margin: 0 0 20px;
+    margin: 0 0 10px;
     color: var(--text-color);
 }
 
@@ -360,6 +361,15 @@ footer {
     padding: 40px 0;
     text-align: center;
     border-top: 1px solid var(--border-color);
+
+
+.scroll-fade-in {
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.scroll-fade-in.visible {
+    opacity: 1;
 }
 
 @media (max-width: 768px) {

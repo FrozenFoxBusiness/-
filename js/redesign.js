@@ -20,5 +20,20 @@ document.addEventListener('DOMContentLoaded', () => {
         particlesJS.load('particles-js', 'js/particles.json', function() {
             console.log('particles.js loaded - callback');
         });
-    }
+    // Scroll fade-in effect
+    const fadeInElements = document.querySelectorAll('.scroll-fade-in');
+
+    const fadeInObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    fadeInElements.forEach(element => {
+        fadeInObserver.observe(element);
+    });
 });
