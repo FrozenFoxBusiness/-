@@ -141,6 +141,16 @@ nav a:hover {
     transition: all 0.3s ease;
 }
 
+.btn-fiverr {
+    background-image: linear-gradient(45deg, #1dbf73, #0f3460);
+    padding: 15px 25px;
+    font-size: 18px;
+}
+
+.btn {
+    gap: 10px;
+}
+
 .btn:hover {
     background-position: right center;
     transform: scale(1.05);
@@ -175,11 +185,24 @@ h2 {
     text-align: center;
 }
 
+.skills .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+
 .skills .card h3 {
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 15px;
     color: var(--text-color);
+}
+.skills .card h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 /* Showcase Section */
@@ -245,6 +268,7 @@ h2 {
     gap: 30px;
     margin-top: 40px;
     margin-bottom: 40px;
+    flex-wrap: wrap;
 }
 
 .contact-card {
@@ -253,6 +277,8 @@ h2 {
     border-radius: 10px;
     border: 1px solid var(--border-color);
     transition: all 0.3s ease;
+    min-width: 250px;
+    position: relative;
 }
 
 .contact-card:hover {
@@ -265,6 +291,55 @@ h2 {
     margin-bottom: 10px;
     color: var(--text-color);
 }
+.contact-card h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.copy-btn {
+    background: var(--accent-color);
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.copy-btn:hover {
+    background: var(--text-color);
+}
+
+.copy-notification {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--text-color);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.copy-notification.show {
+    opacity: 1;
+}
+
+.btn i, .contact-card h3 i, .skills .card h3 i, nav a i {
+    margin-right: 8px;
+}
 
 /* Footer */
 footer {
@@ -272,4 +347,23 @@ footer {
     padding: 40px 0;
     text-align: center;
     border-top: 1px solid var(--border-color);
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 48px;
+    }
+    
+    h2 {
+        font-size: 36px;
+    }
+    
+    .contact-methods {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .branding h1 {
+        font-size: 20px;
+    }
 }

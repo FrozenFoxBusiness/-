@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/redesign.css">
     <link rel="icon" href="media/branding/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Add Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
@@ -17,10 +19,10 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#showcase">Showcase</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+                    <li><a href="#showcase"><i class="fas fa-cube"></i> Showcase</a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -32,7 +34,7 @@
             <div class="container">
                 <h1>Custom Minecraft Plugins</h1>
                 <p>Bringing your vision to life with unique mechanics and polished experiences.</p>
-                <a href="#showcase" class="btn">Explore My Work</a>
+                <a href="#showcase" class="btn"><i class="fas fa-rocket"></i> Explore My Work</a>
             </div>
         </section>
 
@@ -41,15 +43,15 @@
                 <h2>My Skills</h2>
                 <div class="skill-cards">
                     <div class="card">
-                        <h3>Java Development</h3>
+                        <h3><i class="fab fa-java"></i> Java Development</h3>
                         <p>Expert in creating high-quality, bug-free Minecraft plugins with Java.</p>
                     </div>
                     <div class="card">
-                        <h3>Performance Optimization</h3>
+                        <h3><i class="fas fa-tachometer-alt"></i> Performance Optimization</h3>
                         <p>Lightweight code that won't lag your server, even with heavy use.</p>
                     </div>
                     <div class="card">
-                        <h3>Custom Mechanics</h3>
+                        <h3><i class="fas fa-cogs"></i> Custom Mechanics</h3>
                         <p>Unique gameplay systems tailored to your server's theme and vision.</p>
                     </div>
                 </div>
@@ -62,7 +64,7 @@
                 <div class="showcase-accordion">
                     <!-- Star SMP -->
                     <div class="accordion-item">
-                        <div class="accordion-header">
+                        <div class="accordion-header">                            
                             <img src="media/starsmp/staricons/ice.png" alt="Star SMP Icon">
                             <h3>Star SMP</h3>
                         </div>
@@ -78,6 +80,15 @@
                                 <video controls>
                                     <source src="media/starsmp/FallingStar.mp4" type="video/mp4">
                                 </video>
+                                <video controls>
+                                    <source src="media/starsmp/IceStarReplay.mp4" type="video/mp4">
+                                </video>
+                                <video controls>
+                                    <source src="media/starsmp/SoundStar1Replay.mp4" type="video/mp4">
+                                </video>
+                                <video controls>
+                                    <source src="media/starsmp/FallingStarReplay.mp4" type="video/mp4">
+                                </video>
                             </div>
                         </div>
                     </div>
@@ -92,13 +103,22 @@
                             <p>A hardcore survival experience with a unique twist, featuring 18 unique stars.</p>
                             <div class="media-gallery">
                                 <video controls>
-                                    <source src="media/astralitessmp/SupernovaReplay.mp4" type="video/mp4">
+                                    <source src="media/astralitessmp/ChaosReplay.mp4" type="video/mp4">
+                                </video>
+                                <video controls>
+                                    <source src="media/astralitessmp/CrushReplay.mp4" type="video/mp4">
+                                </video>
+                                <video controls>
+                                    <source src="media/astralitessmp/FreezeReplay.mp4" type="video/mp4">
+                                </video>
+                                <video controls>
+                                    <source src="media/astralitessmp/LifeLeechStar.mp4" type="video/mp4">
                                 </video>
                                 <video controls>
                                     <source src="media/astralitessmp/MeteorReplay.mp4" type="video/mp4">
                                 </video>
                                 <video controls>
-                                    <source src="media/astralitessmp/FreezeReplay.mp4" type="video/mp4">
+                                    <source src="media/astralitessmp/SupernovaReplay.mp4" type="video/mp4">
                                 </video>
                             </div>
                         </div>
@@ -114,13 +134,22 @@
                             <p>A unique SMP experience with custom sparks and abilities.</p>
                             <div class="media-gallery">
                                 <video controls>
-                                    <source src="media/sparksmp/DuneReplay.mp4" type="video/mp4">
-                                </video>
-                                <video controls>
                                     <source src="media/sparksmp/DarknessReplay.mp4" type="video/mp4">
                                 </video>
                                 <video controls>
+                                    <source src="media/sparksmp/DuneReplay.mp4" type="video/mp4">
+                                </video>
+                                <video controls>
                                     <source src="media/sparksmp/EmeraldReplay.mp4" type="video/mp4">
+                                </video>
+                                <video controls>
+                                    <source src="media/sparksmp/EnderReplay.mp4" type="video/mp4">
+                                </video>
+                                <video controls>
+                                    <source src="media/sparksmp/HasteReplay.mp4" type="video/mp4">
+                                </video>
+                                <video controls>
+                                    <source src="media/sparksmp/StrengthReplay.mp4" type="video/mp4">
                                 </video>
                             </div>
                         </div>
@@ -135,26 +164,63 @@
                 <p>Contact me for plugin inquiries, collaborations, or support.</p>
                 <div class="contact-methods">
                     <div class="contact-card">
-                        <h3>Discord</h3>
-                        <p>frozennfox</p>
+                        <h3><i class="fab fa-discord"></i> Discord</h3>
+                        <div class="contact-info">
+                            <p>frozennfox</p>
+                            <button class="copy-btn" data-text="frozennfox">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                        </div>
+                        <div class="copy-notification">Copied!</div>
                     </div>
                     <div class="contact-card">
-                        <h3>Email</h3>
-                        <p>ffrozennfox@gmail.com</p>
+                        <h3><i class="fas fa-envelope"></i> Email</h3>
+                        <div class="contact-info">
+                            <p>ffrozennfox@gmail.com</p>
+                            <button class="copy-btn" data-text="ffrozennfox@gmail.com">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                        </div>
+                        <div class="copy-notification">Copied!</div>
                     </div>
                 </div>
-                <a href="https://www.fiverr.com/frrozenfox?public_mode=true" class="btn" target="_blank">Hire Me on Fiverr</a>
+                <a href="https://www.fiverr.com/frrozenfox?public_mode=true" class="btn btn-fiverr" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> Hire Me on Fiverr
+                </a>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 FrozenFox. All rights reserved.</p>
+            <p>Silly mode :></p>
         </div>
     </footer>
 
     <script src="js/particles.js"></script>
     <script src="js/redesign.js"></script>
+    <!-- Add copy functionality -->
+    <script>
+        // Copy button functionality
+        document.querySelectorAll('.copy-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const textToCopy = button.getAttribute('data-text');
+                const notification = button.parentElement.nextElementSibling;
+
+                // Copy to clipboard
+                navigator.clipboard.writeText(textToCopy).then(() => {
+                    // Show notification
+                    notification.classList.add('show');
+
+                    // Hide notification after 2 seconds
+                    setTimeout(() => {
+                        notification.classList.remove('show');
+                    }, 2000);
+                }).catch(err => {
+                    console.error('Failed to copy text: ', err);
+                });
+            });
+        });
+    </script>
 </body>
 </html>
