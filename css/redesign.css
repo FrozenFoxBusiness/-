@@ -252,10 +252,13 @@ h2 {
 }
 
 .showcase-accordion .accordion-content {
-    padding: 0 20px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    transition: max-height 0.3s ease-out;
+}
+
+.showcase-accordion .accordion-content-wrapper {
+    padding: 20px;
 }
 
 .media-gallery {
@@ -351,6 +354,21 @@ h2 {
     opacity: 1;
 }
 
+.silly-mode {
+    animation: rainbow-wave 5s linear infinite;
+}
+
+@keyframes rainbow-wave {
+    0% { --border-color: #ff0000; --text-color: #ff0000; }
+    14% { --border-color: #ff7f00; --text-color: #ff7f00; }
+    28% { --border-color: #ffff00; --text-color: #ffff00; }
+    42% { --border-color: #00ff00; --text-color: #00ff00; }
+    57% { --border-color: #0000ff; --text-color: #0000ff; }
+    71% { --border-color: #4b0082; --text-color: #4b0082; }
+    85% { --border-color: #8f00ff; --text-color: #8f00ff; }
+    100% { --border-color: #ff0000; --text-color: #ff0000; }
+}
+
 .btn i, .contact-card h3 i, .skills .card h3 i, nav a i {
     margin-right: 8px;
 }
@@ -389,4 +407,5 @@ footer {
     .branding h1 {
         font-size: 20px;
     }
+}
 }
